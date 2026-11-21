@@ -14,13 +14,13 @@
 	#Energy per operation tick (Joules).
 	ambientGasCollector = "100000"
 	#Energy per operation tick (Joules).
-	" largeRotaryCondensentrator " = "50"
+	" largeRotaryCondensentrator " = "50000"
 	#Energy per operation tick (Joules).
-	" largeChemicalInfuser " = "100"
+	" largeChemicalInfuser " = "100000"
 	#Energy per operation tick (Joules).
 	" largeAntiprotonicNucleosynthesizer " = "500000"
 	#Energy per operation tick (Joules).
-	" largePigmentMixer " = "100"
+	" largePigmentMixer " = "100000"
 
 	#Settings for configuring Replicator Energy Usage
 	[usage.replicator]
