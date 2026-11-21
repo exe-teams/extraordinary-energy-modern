@@ -1,0 +1,13 @@
+name = "AE2 MonitorNet"
+filename = "ae_monitornet-1.20.1-1.2.0.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6078c8f30984c9f3e5a029c3a39b4ff5545cdd2a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9298243
+project-id = 1759029

@@ -1,0 +1,288 @@
+
+#Evolved Mekanism Extras More Capacity Config
+["More Capacity Mode"]
+	#If this is true, these configurations will be applied.
+	MoreCapacityMode = false
+
+[CompressingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 3024000, Vanilla: 30240
+	#Range: 1 ~ 9223372036854775807
+	AbsoluteOverclockedChemicalTankCapacity = 3024000
+	#Chemical tank capacity (mB). Default: 4116000, Vanilla: 41160
+	#Range: 1 ~ 9223372036854775807
+	SupremeQuantumChemicalTankCapacity = 4116000
+	#Chemical tank capacity (mB). Default: 5376000, Vanilla: 53760
+	#Range: 1 ~ 9223372036854775807
+	CosmicDenseChemicalTankCapacity = 5376000
+	#Chemical tank capacity (mB). Default: 6804000, Vanilla: 68040
+	#Range: 1 ~ 9223372036854775807
+	InfiniteMultiversalChemicalTankCapacity = 6804000
+
+[InjectingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 3024000, Vanilla: 30240
+	#Range: 1 ~ 9223372036854775807
+	AbsoluteOverclockedChemicalTankCapacity = 3024000
+	#Chemical tank capacity (mB). Default: 4116000, Vanilla: 41160
+	#Range: 1 ~ 9223372036854775807
+	SupremeQuantumChemicalTankCapacity = 4116000
+	#Chemical tank capacity (mB). Default: 5376000, Vanilla: 53760
+	#Range: 1 ~ 9223372036854775807
+	CosmicDenseChemicalTankCapacity = 5376000
+	#Chemical tank capacity (mB). Default: 6804000, Vanilla: 68040
+	#Range: 1 ~ 9223372036854775807
+	InfiniteMultiversalChemicalTankCapacity = 6804000
+
+[PurifyingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 3024000, Vanilla: 30240
+	#Range: 1 ~ 9223372036854775807
+	AbsoluteOverclockedChemicalTankCapacity = 3024000
+	#Chemical tank capacity (mB). Default: 4116000, Vanilla: 41160
+	#Range: 1 ~ 9223372036854775807
+	SupremeQuantumChemicalTankCapacity = 4116000
+	#Chemical tank capacity (mB). Default: 5376000, Vanilla: 53760
+	#Range: 1 ~ 9223372036854775807
+	CosmicDenseChemicalTankCapacity = 5376000
+	#Chemical tank capacity (mB). Default: 6804000, Vanilla: 68040
+	#Range: 1 ~ 9223372036854775807
+	InfiniteMultiversalChemicalTankCapacity = 6804000
+
+[InfusingFactoryEMExtras]
+	#Chemical tank capacity (mB).
+	#Range: 1 ~ 9223372036854775807
+	AbsoluteOverclockedInfusingFactory = 144000
+	#Chemical tank capacity (mB).
+	#Range: 1 ~ 9223372036854775807
+	SupremeQuantumInfusingFactory = 196000
+	#Chemical tank capacity (mB).
+	#Range: 1 ~ 9223372036854775807
+	CosmicDenseInfusingFactory = 256000
+	#Chemical tank capacity (mB).
+	#Range: 1 ~ 9223372036854775807
+	InfiniteMultiversalInfusingFactory = 324000
+
+[CentrifugingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteInputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeInputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicInputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteInputChemicalTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteOutputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeOutputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicOutputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteOutputChemicalTankCapacity = 18000000
+
+[WashingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteInputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeInputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicInputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteInputChemicalTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: > 1
+	absoluteInputFluidTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: > 1
+	supremeInputFluidTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: > 1
+	cosmicInputFluidTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: > 1
+	infiniteInputFluidTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteOutputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeOutputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicOutputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteOutputChemicalTankCapacity = 18000000
+
+[DissolvingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteInputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeInputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicInputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteInputChemicalTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteOutputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeOutputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicOutputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteOutputChemicalTankCapacity = 18000000
+
+[OxidizingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 18000000
+
+[CrystallizingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 18000000
+
+[PigmentExtractingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 18000000
+
+[LiquifyingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: > 1
+	absoluteFluidTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: > 1
+	supremeFluidTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: > 1
+	cosmicFluidTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: > 1
+	infiniteFluidTankCapacity = 18000000
+
+[PaintingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 21000000, Vanilla: 210000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 21000000
+	#Chemical tank capacity (mB). Default: 24000000, Vanilla: 240000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 24000000
+	#Chemical tank capacity (mB). Default: 27000000, Vanilla: 270000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 27000000
+
+[PlantingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 18000000
+
+[PRCFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteInputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeInputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicInputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteInputChemicalTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: > 1
+	absoluteInputFluidTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: > 1
+	supremeInputFluidTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: > 1
+	cosmicInputFluidTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: > 1
+	infiniteInputFluidTankCapacity = 18000000
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteOutputChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeOutputChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicOutputChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteOutputChemicalTankCapacity = 18000000
+
+[ReplicatingFactoryEMExtras]
+	#Chemical tank capacity (mB). Default: 12000000, Vanilla: 120000
+	#Range: 1 ~ 9223372036854775807
+	absoluteChemicalTankCapacity = 12000000
+	#Chemical tank capacity (mB). Default: 14000000, Vanilla: 140000
+	#Range: 1 ~ 9223372036854775807
+	supremeChemicalTankCapacity = 14000000
+	#Chemical tank capacity (mB). Default: 16000000, Vanilla: 160000
+	#Range: 1 ~ 9223372036854775807
+	cosmicChemicalTankCapacity = 16000000
+	#Chemical tank capacity (mB). Default: 18000000, Vanilla: 180000
+	#Range: 1 ~ 9223372036854775807
+	infiniteChemicalTankCapacity = 18000000
+

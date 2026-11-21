@@ -1,0 +1,13 @@
+name = "AE2AddonLib"
+filename = "AE2AddonLib-1.0.4-1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "87b83f4ad3c378e14f637210a469c2ced9144e04"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7668681
+project-id = 1366135

@@ -1,0 +1,16 @@
+
+#チーム次元へ初めて入ったプレイヤーに、スポーン直後に渡すアイテムです。
+#形式は namespace:item または namespace:item,個数 です。
+#渡す前に、インベントリ、防具、オフハンド、カーソル、Curios を空にします。
+#2回目以降の入場とリスポーンでは所持品を変えません。
+#フラット型の地形は config/execore-flat-preset.json です。
+#biome、lakes、features、layers、structure_overrides を書けます。
+#読めないときはバニラの classic_flat を使い、既に作られた次元には適用されません。
+[teamDimension]
+	#オーバーワールド型の初期アイテム
+	overworldItems = ["integrateddynamics:menril_sapling,16"]
+	#フラット型の初期アイテム
+	flatItems = ["integrateddynamics:menril_sapling,16"]
+	#スカイブロック型の初期アイテム
+	skyblockItems = ["integrateddynamics:menril_sapling,16", "minecraft:oak_sapling,16"]
+

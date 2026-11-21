@@ -1,0 +1,13 @@
+name = "AE2 WCWT"
+filename = "wcwt-1.20.1.11.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "3a35c7ea798f2040e74070bb79b27410dff7a81a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9036216
+project-id = 1546802

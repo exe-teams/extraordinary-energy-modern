@@ -1,0 +1,13 @@
+name = "Advanced Quantum Engineering"
+filename = "aqe2.2.7_1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "a3eff273b50a510394ee900ac66e3150ca27380f"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8688193
+project-id = 1608643

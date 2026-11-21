@@ -7,4 +7,6 @@ value = 1000
 magicNumberIntroduction = "The magic number is... "
 #A list of items to log on common setup.
 items = ["minecraft:iron_ingot"]
+#Makes Mekanism Alloy/Control Circuit Recipe Defficult
+makeRecipeDifficult = false
 

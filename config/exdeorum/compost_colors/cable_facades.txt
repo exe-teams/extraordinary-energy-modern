@@ -1,0 +1,2 @@
+// Compost colors for cable_facades. You may add your own colors, change existing ones, or remove colors that aren't needed.
+facade_wrench, #61617f

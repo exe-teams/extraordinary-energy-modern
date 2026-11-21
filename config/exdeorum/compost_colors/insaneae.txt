@@ -1,0 +1,27 @@
+// Compost colors for insaneae. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cell_component_16g, #e0a5d2
+cell_component_16p, #d7e1a4
+cell_component_16t, #e0b1a4
+cell_component_1e, #8ec397
+cell_component_1g, #c290b2
+cell_component_1p, #b6c38e
+cell_component_1t, #c29e8e
+cell_component_256g, #ffb8f7
+cell_component_256p, #fbfcb8
+cell_component_256t, #ffc0b9
+cell_component_4e, #96c99a
+cell_component_4g, #c996bc
+cell_component_4p, #c2c996
+cell_component_4t, #c9a196
+cell_component_64g, #eeace3
+cell_component_64p, #e7edab
+cell_component_64t, #eeb6ac
+cell_component_8e, #afcacd
+creative_cell, #e8d9ff
+hypersonic_card, #a298b1
+overclock_card, #a2b6b1
+quantum_acceleration_card, #b2abbc
+task_fusion_card, #b6bba5
+turbo_card, #abb691
+ultra_creative_cell, #e8d9ff
+warp_card, #b198b1

@@ -1,0 +1,18 @@
+
+#Machine Energy Usage Config. This config is synced from server to client.
+[usage]
+	#Energy per operation tick (Joules).
+	greenHouse = "50"
+	#Energy per operation tick (Joules).
+	mekanicalCherger = "50"
+	#Energy per operation tick (Joules).
+	mekanicalInscriber = "50"
+	#Energy per operation tick (Joules).
+	transformer = "50"
+	#Energy per operation tick (Joules).
+	essentialCrafter = "50"
+	#Energy per operation tick (Joules).
+	fluidInfuser = "200"
+	#Energy per operation tick (Joules). Recipe require energy will added to Actual consumption. 
+	aaeReactionChamber = "1"
+
