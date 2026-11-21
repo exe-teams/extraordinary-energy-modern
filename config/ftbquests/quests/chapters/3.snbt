@@ -6,14 +6,22 @@
 	icon: "mek1000:eternal_singularity"
 	id: "749E147C58AC2756"
 	order_index: 3
-	quest_links: [{
-		id: "0D8C12A7809A01EE"
-		linked_quest: "2702EF80D5C6865C"
-		shape: "hexagon"
-		size: 5.0d
-		x: -2.5d
-		y: 7.5d
-	}]
+	quest_links: [
+		{
+			id: "0D8C12A7809A01EE"
+			linked_quest: "2702EF80D5C6865C"
+			shape: "hexagon"
+			size: 5.0d
+			x: -2.5d
+			y: 7.5d
+		}
+		{
+			id: "0BC4C1691F8E3CE1"
+			linked_quest: "7D70184C6C6FA8F5"
+			x: 0.5d
+			y: 1.0d
+		}
+	]
 	quests: [
 		{
 			dependencies: ["31D9507041433980"]
@@ -109,7 +117,7 @@
 				item: "mek1000:the_null"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.3.quest7.subtitle}"
+			subtitle: "テクスチャは仕様！"
 			tasks: [{
 				id: "505F1C74D343F5BD"
 				item: "mek1000:the_null"
@@ -213,6 +221,36 @@
 			}]
 			x: -4.0d
 			y: 1.0d
+		}
+		{
+			dependencies: ["7D70184C6C6FA8F5"]
+			id: "7850EFC5D10117DE"
+			rewards: [{
+				count: 3
+				id: "66925FD2926C15B3"
+				item: "mek1000:ultimate_alloy_ingot"
+				type: "item"
+			}]
+			shape: "square"
+			size: 1.0d
+			tasks: [{
+				id: "08334E8E82FFAE38"
+				item: "mek1000:ultimate_alloy_ingot"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7850EFC5D10117DE"]
+			id: "19B27F9ED5DB182E"
+			tasks: [{
+				id: "70E9FCC6F50BB262"
+				item: "mek1000:fusion_coil"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 7.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.3.subtitle0}"]

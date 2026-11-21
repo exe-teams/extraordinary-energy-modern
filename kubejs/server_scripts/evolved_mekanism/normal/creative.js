@@ -1,83 +1,12 @@
 ServerEvents.recipes((event) => {
-    let creative = ['mekanism:creative_bin', 'mekanism:creative_chemical_tank', 'mekanism:creative_fluid_tank', 'mekanism:creative_energy_cube', 'evolvedmekanism:creative_control_circuit', 'evolvedmekanism:qio_drive_creative', 'evolvedmekanism:creative_tier_installer', 'evolvedmekanism:creative_personal_barrel', 'evolvedmekanism:creative_personal_chest', 'mekanism:creative_chemical_tank', 'mekanism:creative_fluid_tank', 'mekanism:creative_energy_cube', 'evolvedmekanism:block_alloy_creative']
+    let creative = ['mekanism:creative_bin', 'mekanism:creative_chemical_tank', 'mekanism:creative_fluid_tank', 'mekanism:creative_energy_cube', 'evolvedmekanism:qio_drive_creative', 'evolvedmekanism:creative_tier_installer', 'evolvedmekanism:creative_personal_barrel', 'evolvedmekanism:creative_personal_chest', 'mekanism:creative_chemical_tank', 'mekanism:creative_fluid_tank', 'mekanism:creative_energy_cube', 'evolvedmekanism:block_alloy_creative']
 
     creative.forEach(value => {
         event.remove({ output: value })
     })
 
-    event.remove({output:'evolvedmekanism:alloy_creative'})
-    event.custom({
-        "type": "evolvedmekanism:alloying",
-        "extraInput": {
-            "amount": 64,
-            "ingredient": {
-                "item": 'advanced_ae:quantum_alloy'
-            }
-        },
-        "secondExtraInput": {
-            "amount": 64,
-            "ingredient": {
-                "item": 'mek1000:valine3g_ingot_7'
-            }
-        },
-        "mainInput": {
-            "amount": 64,
-            "ingredient": {
-                "item": 'evolvedmekanism:alloy_exoversal',
-            }
-        },
-        "output": {
-            "item": 'evolvedmekanism:alloy_creative'
-        }
-    })
-
-    event.custom({
-        "type": "evolvedmekanism:alloying",
-        "extraInput": {
-            "amount": 64,
-            "ingredient": {
-                "item": 'emextras:infinite_multiversal_control_circuit'
-            }
-        },
-        "secondExtraInput": {
-            "amount": 4,
-            "ingredient": {
-                "item": 'solarpanels:photonic_solar_panel'
-            }
-        },
-        "mainInput": {
-            "amount": 9,
-            "ingredient": {
-                "item": 'evolvedmekanism:alloy_creative',
-            }
-        },
-        "output": {
-            "item": 'evolvedmekanism:block_alloy_creative'
-        }
-    })
-
-    event.custom({
-        "type": "evolvedmekanism:alloying",
-        "extraInput": {
-            "amount": 1,
-            "ingredient": {
-                "item": 'astral_mekanism:illusion_control_circuit'
-            }
-        },
-        "secondExtraInput": {
-            "amount": 1,
-            "ingredient": {
-                "item": 'evolvedmekanism:block_alloy_creative'
-            }
-        },
-        "mainInput": {
-            "amount": 1,
-            "ingredient": {
-                "item": 'astral_mekanism:starry_sky_control_processor',
-            }
-        },
-        "output": {
-            "item": 'evolvedmekanism:creative_control_circuit'
-        }
-    })
+    event.remove({ id: "astral_mekanism:astral_crafting/other/creative_bin" })
+    event.remove({ id: "astral_mekanism:astral_crafting/other/creative_chemical_tank" })
+    event.remove({ id: "astral_mekanism:astral_crafting/other/creative_energy_cube" })
+    event.remove({ id: "astral_mekanism:astral_crafting/other/creative_fluid_tank" })
 })

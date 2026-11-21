@@ -20,7 +20,7 @@
 			min_required_dependencies: 2
 			rewards: [
 				{
-					count: 16
+					count: 128
 					id: "79D6FFBB5E1176A8"
 					ignore_reward_blocking: true
 					item: "integrateddynamics:menril_sapling"

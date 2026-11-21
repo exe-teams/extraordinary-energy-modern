@@ -377,7 +377,7 @@ ServerEvents.recipes((event) => {
   event.recipes.mek1000
     .large_digital_assemble()
     .id("mek1000:recipe_singularity")
-    .duration(10000)
+    .duration(100)
     .outputItems("mek1000:eternal_singularity")
     .perTick((builder) => builder.inputFE(2147483647))
     .slotName("cat0", (builder) =>

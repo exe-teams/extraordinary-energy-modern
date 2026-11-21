@@ -30,6 +30,7 @@ ServerEvents.recipes(event => {
     oxidize('minecraft:gold_ingot', 'mek1000:vaporized_gold', 1)
     oxidize('ae2:certus_quartz_crystal', 'mek1000:vaporized_certus', 1)
     oxidize('kubejs:iridium', 'mek1000:vaporized_iridium', 1)
+    oxidize('mekanism_extras:ingot_naquadah', 'mek1000:vaporized_naquadah', 1)
 
     oxidize('mek1000:compressed_purified_quartz_rawore', 'mek1000:vaporized_quartz', 6000)
     oxidize('mek1000:compressed_purified_iron_rawore', 'mek1000:vaporized_iron', 8100)
@@ -49,4 +50,5 @@ ServerEvents.recipes(event => {
     oxidize('mek1000:compressed_purified_certus_quartz_rawore', 'mek1000:vaporized_certus', 8100)
     oxidize('mek1000:compressed_purified_iridium_rawore', 'mek1000:vaporized_iridium', 8100)
     oxidize('mek1000:compressed_purified_redstone_rawore', 'mek1000:vaporized_redstone', 24000)
+    oxidize('mek1000:compressed_purified_naquadah_rawore', 'mek1000:vaporized_naquadah', 8100)
 })

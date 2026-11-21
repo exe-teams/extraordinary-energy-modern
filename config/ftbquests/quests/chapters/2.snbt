@@ -150,8 +150,8 @@
 				"3FC57EAE35A4448E"
 			]
 			description: [
-				"{ftbquests.chapter.2.quest9.description1}"
-				"{ftbquests.chapter.2.quest9.description2}"
+				"&aNaquadah Uranium Fuel&rを燃料にして発電します"
+				"生産される蒸気を加工することで、&aポロニウム&rを大量に得ることができます。できるだけ早めに作りましょう。"
 			]
 			icon: "astral_mekanism:essential_compact_naquadah_reactor"
 			id: "0A5CBA30DFD5CDE7"
@@ -161,7 +161,7 @@
 				item: "mekanism_extras:infinite_control_circuit"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.2.quest9.subtitle}"
+			subtitle: "超強化済み、より良いポロニウムの供給源"
 			tasks: [{
 				id: "4D657FDC75A212CB"
 				item: "astral_mekanism:essential_compact_naquadah_reactor"
@@ -251,7 +251,7 @@
 		{
 			dependencies: ["7ED68F17797155BB"]
 			id: "06504391F9BD9CD7"
-			subtitle: "{ftbquests.chapter.2.quest16.subtitle}"
+			subtitle: "これはGreg？"
 			tasks: [
 				{
 					id: "01CE73A8589AFB77"

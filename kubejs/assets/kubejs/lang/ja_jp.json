@@ -16,6 +16,7 @@
   "mek1000.material.diamond": "ダイヤモンド",
   "mek1000.material.emerald": "エメラルド",
   "mek1000.material.debri": "古代の残骸",
+  "mek1000.material.naquadah": "ナクアダ",
   "mek1000.teleport.desc.dim": "ディメンション : %s",
   "mek1000.teleport.desc.x": "X : %s",
   "mek1000.teleport.desc.y": "Y : %s",
@@ -284,5 +285,7 @@
   "block.mek1000.large_item_output":"巨大アイテム搬出ポート",
   "block.mek1000.ae_input":"MEインターフェース搬入ポート",
   "block.mek1000.large_imitation_sps_port":"桁違いなエネルギー搬入ポート",
-  "mek1000.auto_output_function.desc":"外部への自動搬出機能を持ちます"
+  "mek1000.auto_output_function.desc":"外部への自動搬出機能を持ちます",
+
+  "singularity.mek1000.creative_control_circuit":"クリエイティブ制御回路"
 }

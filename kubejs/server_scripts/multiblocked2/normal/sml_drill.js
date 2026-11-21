@@ -1,22 +1,22 @@
 ServerEvents.recipes((event) => {
     let sml_s_ores = [
-      "minecraft:coal_ore",
-      "minecraft:iron_ore",
-      "minecraft:copper_ore",
-      "minecraft:gold_ore",
-      "minecraft:redstone_ore",
-      "minecraft:emerald_ore",
-      "minecraft:lapis_ore",
-      "minecraft:diamond_ore",
-      "kubejs:ore_quartz",
-      "kubejs:ore_debri_deepslate",
-      "mekanism:tin_ore",
-      "mekanism:osmium_ore",
-      "mekanism:uranium_ore",
-      "mekanism:fluorite_ore",
-      "mekanism:lead_ore",
-      "kubejs:ore_iridium",
-      'kubejs:ore_certus_quartz',
+        "minecraft:coal_ore",
+        "minecraft:iron_ore",
+        "minecraft:copper_ore",
+        "minecraft:gold_ore",
+        "minecraft:redstone_ore",
+        "minecraft:emerald_ore",
+        "minecraft:lapis_ore",
+        "minecraft:diamond_ore",
+        "kubejs:ore_quartz",
+        "kubejs:ore_debri_deepslate",
+        "mekanism:tin_ore",
+        "mekanism:osmium_ore",
+        "mekanism:uranium_ore",
+        "mekanism:fluorite_ore",
+        "mekanism:lead_ore",
+        "kubejs:ore_iridium",
+        'kubejs:ore_certus_quartz',
     ];
 
     event.recipes.mek1000.sml_drill()
@@ -202,16 +202,16 @@ ServerEvents.recipes((event) => {
         .outputItems('1024x denseores:dense_redstone_ore')
 
     event.recipes.mek1000
-      .sml_drill()
-      .id("mek1000:sml_drilling_l11")
-      .machineLevel(2)
-      .duration(20 * 1)
-      .perTick((builder) => builder.inputFE(2147483647))
-      .chance(0, (builder) => builder.inputItems("mekanism:laser"))
-      .inputItems("mek1000:emc", "kubejs:ore_quartz")
+        .sml_drill()
+        .id("mek1000:sml_drilling_l11")
+        .machineLevel(2)
+        .duration(20 * 1)
+        .perTick((builder) => builder.inputFE(2147483647))
+        .chance(0, (builder) => builder.inputItems("mekanism:laser"))
+        .inputItems("mek1000:emc", "kubejs:ore_quartz")
 
-      .outputItems("1024x kubejs:ore_quartz")
-      .outputItems("1024x kubejs:dense_ore_quartz");
+        .outputItems("1024x kubejs:ore_quartz")
+        .outputItems("1024x kubejs:dense_ore_quartz");
 
     event.recipes.mek1000.sml_drill()
         .id("mek1000:sml_drilling_l12")
@@ -302,15 +302,27 @@ ServerEvents.recipes((event) => {
 
         .outputItems('1024x kubejs:ore_iridium')
         .outputItems('1024x kubejs:dense_ore_iridium')
-    
-        event.recipes.mek1000
-          .sml_drill()
-          .id("mek1000:sml_drilling_l18")
-          .machineLevel(2)
-          .duration(20 * 1)
-          .perTick((builder) => builder.inputFE(2147483647))
-          .chance(0, (builder) => builder.inputItems("mekanism:laser"))
-          .inputItems("mek1000:emc", "kubejs:ore_debri_deepslate")
-          .outputItems("1024x kubejs:ore_debri_deepslate");
 
+    event.recipes.mek1000
+        .sml_drill()
+        .id("mek1000:sml_drilling_l18")
+        .machineLevel(2)
+        .duration(20 * 1)
+        .perTick((builder) => builder.inputFE(2147483647))
+        .chance(0, (builder) => builder.inputItems("mekanism:laser"))
+        .inputItems("mek1000:emc", "kubejs:ore_debri_deepslate")
+        .outputItems("1024x kubejs:ore_debri_deepslate");
+
+    event.recipes.mek1000
+        .sml_drill()
+        .id("mek1000:sml_drilling_l19")
+        .machineLevel(2)
+        .duration(20 * 1)
+        .perTick((builder) => builder.inputFE(2147483647))
+        .chance(0, (builder) => builder.inputItems("mekanism:laser"))
+        .inputItems("mek1000:emc", '64x mekanism_extras:block_naquadah')
+        .outputItems("2048x mekanism_extras:end_naquadah_ore")
+        .chance(0.3, builder => builder
+            .outputItems('2048x mekanism_extras:end_naquadah_ore')
+        );
 })

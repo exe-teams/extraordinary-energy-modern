@@ -14,15 +14,22 @@
 			y: -4.5d
 		}
 		{
-			id: "095F8F3575F5F97C"
+			id: "020E499935A428A3"
+			linked_quest: "7850EFC5D10117DE"
+			shape: "square"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			id: "4F3EF939B83925C9"
 			linked_quest: "7D70184C6C6FA8F5"
 			x: 5.0d
-			y: -1.5d
+			y: -1.0d
 		}
 	]
 	quests: [
 		{
-			dependencies: ["65211AE2930E4A03"]
+			dependencies: ["7850EFC5D10117DE"]
 			id: "72875BEA367BA174"
 			rewards: [{
 				count: 15
@@ -283,6 +290,10 @@
 		}
 		{
 			dependencies: ["6F6359AE040DD991"]
+			description: [
+				"MEドライブに直接入れることができます。"
+				"自らを無限に取り出せるようになります。"
+			]
 			id: "10050B7F64430EBD"
 			shape: "pentagon"
 			tasks: [{
@@ -316,9 +327,15 @@
 		}
 		{
 			dependencies: ["6F6359AE040DD991"]
+			description: [
+				"MEドライブに直接入れることができます。"
+				"自らを無限に取り出せるようになります。"
+				""
+				"ドライブに入れた際、ガスが入っている場合はガスも無限化します。"
+			]
 			id: "59401C265DEB5E33"
 			shape: "pentagon"
-			subtitle: "{ftbquests.chapter.4.quest22.subtitle}"
+			subtitle: "最初に作成するのを推奨"
 			tasks: [{
 				id: "39B4E80C478B5317"
 				item: "mekanism:creative_chemical_tank"
@@ -329,6 +346,12 @@
 		}
 		{
 			dependencies: ["6F6359AE040DD991"]
+			description: [
+				"MEドライブに直接入れることができます。"
+				"自らを無限に取り出せるようになります。"
+				""
+				"ドライブに入れた際、液体が入っている場合は液体も無限化します。"
+			]
 			id: "2A994D1DDF1039D5"
 			shape: "pentagon"
 			tasks: [{
@@ -341,6 +364,10 @@
 		}
 		{
 			dependencies: ["6F6359AE040DD991"]
+			description: [
+				"MEドライブに直接入れることができます。"
+				"自らを無限に取り出せるようになります。"
+			]
 			id: "79896856FE750D5D"
 			shape: "pentagon"
 			tasks: [{
@@ -352,47 +379,17 @@
 			y: 10.5d
 		}
 		{
-			dependencies: ["7D70184C6C6FA8F5"]
-			id: "65211AE2930E4A03"
-			rewards: [{
-				count: 3
-				id: "3EFF92553DDBF25C"
-				item: "mek1000:ultimate_alloy_ingot"
-				type: "item"
-			}]
-			shape: "square"
-			size: 1.0d
-			tasks: [{
-				id: "494D41E0A3BAF595"
-				item: "mek1000:ultimate_alloy_ingot"
-				type: "item"
-			}]
-			x: 5.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["1A90004799FC9497"]
+			dependencies: ["6F6359AE040DD991"]
 			id: "6D7A910C7242BA45"
 			shape: "pentagon"
 			size: 3.0d
 			tasks: [{
 				id: "28BBE0BBD844C628"
-				item: "hyperdaimc:desk"
+				item: "extendedcrafting:legendary_table"
 				type: "item"
 			}]
 			x: 3.0d
 			y: 13.5d
-		}
-		{
-			dependencies: ["6F6359AE040DD991"]
-			id: "1A90004799FC9497"
-			tasks: [{
-				id: "52C03664A022F323"
-				item: "hyperdaimc:bug_star"
-				type: "item"
-			}]
-			x: 3.0d
-			y: 10.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.4.subtitle0}"]

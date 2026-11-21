@@ -150,7 +150,7 @@
 				item: "mwgr:water_generator"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest9.subtitle}"
+			subtitle: "核分裂炉を動かそう"
 			tasks: [{
 				id: "52C10BFAB8DABE2B"
 				item: "mwgr:water_generator"
@@ -209,7 +209,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest10.subtitle}"
+			subtitle: "次世代輸送"
 			tasks: [
 				{
 					id: "78DB2D834490D7C7"
@@ -229,10 +229,10 @@
 			dependencies: ["4F31918E1746CC36"]
 			hide_until_deps_complete: true
 			id: "44F6EA6577D68936"
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest11.subtitle}"
+			subtitle: "私も、飛べる！"
 			tasks: [{
 				id: "2A6F01B6C7C2A67D"
-				item: "better_angel_ring:angel_ring"
+				item: "execore:airborne_mining_charm"
 				type: "item"
 			}]
 			x: -1.5d
@@ -241,7 +241,7 @@
 		{
 			dependencies: ["68335D23BF84FEE3"]
 			id: "634F9F87DFF73DD4"
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest12.subtitle}"
+			subtitle: "光あれ"
 			tasks: [{
 				id: "14197110D93989B2"
 				item: {
@@ -259,35 +259,14 @@
 		{
 			dependencies: ["016780D32B1ABC49"]
 			id: "66749D40CCB801F9"
-			rewards: [{
-				id: "693D8464C66F0D56"
-				item: {
-					Count: 1
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "g_abun:absolutelyunbreakable"
-							lvl: 1s
-						}]
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest13.subtitle}"
+			subtitle: "何でも行ける"
 			tasks: [{
-				id: "0E6A85C7F28454B6"
-				item: {
-					Count: 1
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "g_abun:absolutelyunbreakable"
-							lvl: 1s
-						}]
-					}
-				}
+				count: 8L
+				id: "0ECDE3EF46D46ABF"
+				item: { Count: 8, id: "minecraft:netherite_block" }
 				type: "item"
 			}]
+			title: "壊れなくする方法"
 			x: -0.5d
 			y: -2.0d
 		}
@@ -433,7 +412,7 @@
 		}
 		{
 			dependencies: ["6BADA3B6CB0642D8"]
-			description: ["{ftbquests.chapter.17633E6667C22EEC.quest22.description1}"]
+			description: ["開けるとランダムなスポーンエッグが入手できます"]
 			id: "49112B5C9B9A1E5C"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -441,7 +420,7 @@
 				table_id: 2320373292357157649L
 				type: "choice"
 			}]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest22.subtitle}"
+			subtitle: "魔法石で引くやつ"
 			tasks: [{
 				id: "718F5A0F38FF420A"
 				item: {
@@ -458,7 +437,7 @@
 		}
 		{
 			dependencies: ["6BADA3B6CB0642D8"]
-			description: ["{ftbquests.chapter.17633E6667C22EEC.quest23.description1}"]
+			description: ["開けるとランダムなレコードを入手できます"]
 			id: "7B94ADFC703FE203"
 			rewards: [{
 				exclude_from_claim_all: true
@@ -466,7 +445,7 @@
 				table_id: 7630844454365538480L
 				type: "choice"
 			}]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest23.subtitle}"
+			subtitle: "ディスコタイム！"
 			tasks: [{
 				id: "79430D5B5C0AA83E"
 				item: {
@@ -495,7 +474,7 @@
 				}
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.17633E6667C22EEC.quest24.subtitle}"
+			subtitle: "時は、加速する"
 			tasks: [
 				{
 					id: "1EF3292EADD47BB6"
@@ -520,6 +499,11 @@
 		{
 			dependencies: ["016780D32B1ABC49"]
 			id: "12FF2F07AB7D1E55"
+			rewards: [{
+				id: "0D23AA0B783C36CD"
+				type: "xp"
+				xp: 5000
+			}]
 			tasks: [
 				{
 					id: "28269F5DA54A6857"

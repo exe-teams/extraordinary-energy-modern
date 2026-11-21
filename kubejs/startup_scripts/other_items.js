@@ -37,10 +37,6 @@ StartupEvents.registry("item", event => {
     event.create('mek1000:printed_echo_processor')
     event.create('mek1000:printed_valinium_processor')
 
-    event.create('mek1000:creative_chemical_data')
-    event.create('mek1000:creative_fluid_data')
-    event.create('mek1000:creative_energy_data')
-
     event.create('mek1000:flux_processor')
     event.create('mek1000:cognitive_processor')
     event.create('mek1000:echo_processor')
@@ -80,4 +76,5 @@ StartupEvents.registry("item", event => {
     event.create('mek1000:compressed_redstone_crystal').texture("mek1000:item/wip").glow(true)
     event.create('mek1000:compressed_quantum_alloy').texture("mek1000:item/wip").glow(true)
     event.create('mek1000:compressed_sky_steel').texture("mek1000:item/wip").glow(true)
+    event.create(`mek1000:grand_light_star`).glow(true)
 })

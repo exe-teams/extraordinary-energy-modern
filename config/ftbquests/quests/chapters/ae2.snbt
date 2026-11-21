@@ -23,7 +23,7 @@
 				id: "138485C252A793BE"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.ae2.quest1.title}"
+			title: "チャンネル切り替え : 無限"
 			x: -2.5d
 			y: -5.5d
 		}
@@ -43,7 +43,7 @@
 				id: "389E7CD2E923FD9A"
 				type: "checkmark"
 			}]
-			title: "{ftbquests.chapter.ae2.quest2.title}"
+			title: "チャンネル切り替え : デフォルト"
 			x: -1.5d
 			y: -5.5d
 		}
@@ -56,7 +56,7 @@
 				item: "ae2:controller"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.ae2.quest3.subtitle}"
+			subtitle: "ゲーミングキラキラキューブ"
 			tasks: [{
 				id: "71B57271F0EDE0A3"
 				item: "ae2:controller"
@@ -110,7 +110,7 @@
 		}
 		{
 			dependencies: ["3EC8578BF8588081"]
-			description: ["{ftbquests.chapter.ae2.quest10.description1}"]
+			description: ["Modpackでの改変により、&a12x12x12&rまでの大きさで作成できます。"]
 			id: "6ED653CBAC9C7950"
 			rewards: [
 				{
@@ -270,7 +270,7 @@
 		}
 		{
 			dependencies: ["25D4C3E90302E4EC"]
-			description: ["{ftbquests.chapter.ae2.quest13.description1}"]
+			description: ["&a石切台&rで&aP2Pトンネル&rの種類を切り替えられます"]
 			id: "7A5B9CB0EFC2334B"
 			rewards: [{
 				count: 15
@@ -289,7 +289,7 @@
 		{
 			dependencies: ["25D4C3E90302E4EC"]
 			id: "5C461433047AC112"
-			subtitle: "{ftbquests.chapter.ae2.quest14.subtitle}"
+			subtitle: "レインボーなアートを描こう"
 			tasks: [{
 				id: "6BC50F46E8AA496D"
 				item: "mae2a:infinite_dyes_cell"
@@ -358,7 +358,7 @@
 				title: "{ftbquests.chapter.ae2.quest18.task_6879066666931072408.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ae2.quest18.title}"
+			title: "任意のセル"
 			x: 3.5d
 			y: -1.0d
 		}
@@ -394,7 +394,7 @@
 				title: "{ftbquests.chapter.ae2.quest19.task_7022662481880896196.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ae2.quest19.title}"
+			title: "任意のDISKドライブ"
 			x: 3.5d
 			y: -2.0d
 		}
@@ -418,7 +418,7 @@
 				title: "{ftbquests.chapter.ae2.quest20.task_6814283282519938255.title}"
 				type: "item"
 			}]
-			title: "{ftbquests.chapter.ae2.quest20.title}"
+			title: "任意のFEセル"
 			x: 3.5d
 			y: -3.0d
 		}
@@ -499,9 +499,9 @@
 		{
 			dependencies: ["25D4C3E90302E4EC"]
 			description: [
-				"{ftbquests.chapter.ae2.quest27.description1}"
+				"限界高度に&a上向き&rで設置するとMEネットワーク内に&aスカイストーンダスト&rが生成されます"
 				""
-				"{ftbquests.chapter.ae2.quest27.description2}"
+				"ブロックを破壊するのにも使用できます(本来の用途)"
 			]
 			id: "02491F4F5E0B2531"
 			rewards: [{
@@ -510,7 +510,7 @@
 				item: "ae2:sky_dust"
 				type: "item"
 			}]
-			subtitle: "{ftbquests.chapter.ae2.quest27.subtitle}"
+			subtitle: "仰げば尊し"
 			tasks: [
 				{
 					id: "1F49BA875DD9BCF5"
@@ -574,8 +574,8 @@
 		{
 			dependencies: ["25D4C3E90302E4EC"]
 			description: [
-				"{ftbquests.chapter.ae2.quest28.description1}"
-				"{ftbquests.chapter.ae2.quest28.description2}"
+				"MEネットワーク内の素材を使い、入っているパターンに沿って自動クラフトをする機械です。"
+				"再帰的なクラフトを自動化することができます(鍛冶型など)"
 			]
 			id: "0469C4480DC9589F"
 			tasks: [{
@@ -600,8 +600,8 @@
 		{
 			dependencies: ["166C118248FF8548"]
 			description: [
-				"{ftbquests.chapter.ae2.quest29.description1}"
-				"{ftbquests.chapter.ae2.quest29.description2}"
+				"無線アクセスポイントに接続し、セルワークベンチでMekanism機械のアップグレードを登録してください。"
+				"在庫がある限り、登録されたアップグレードを機械にインストールできます。"
 			]
 			id: "651A594A7EE485DC"
 			tasks: [{
@@ -613,10 +613,13 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["25D4C3E90302E4EC"]
+			dependencies: [
+				"25D4C3E90302E4EC"
+				"6D7A910C7242BA45"
+			]
 			description: [
-				"{ftbquests.chapter.ae2.quest30.description1}"
-				"{ftbquests.chapter.ae2.quest30.description2}"
+				"アイテム、液体、ガス、電力などをBigIntegerの最大まで保管出来ます。"
+				"実質無限の容量を持ちます。"
 			]
 			id: "76D9C7A1A4B62890"
 			tasks: [{

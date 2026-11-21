@@ -16,4 +16,6 @@ StartupEvents.registry("mekanism:gas", event => {
     event.create('mek1000:vaporized_lead').color("0x5f9ea0")
     event.create('mek1000:vaporized_uranium').color("0x98fb98")
     event.create('mek1000:vaporized_osmium').color("0x87ceeb")
+    event.create('mek1000:vaporized_debri').color("0x22242A")
+    event.create('mek1000:vaporized_naquadah').color("0x242e0a")
 })

@@ -225,7 +225,7 @@ ServerEvents.recipes(event => {
         {
           amount: 2,
           ingredient: {
-            item: 'morethermalevaporationcompat:infinite_multiversal_compact_thermal_evaporation',
+            item: 'astral_mekanism:infinite_multiversal_compact_tep',
           },
         },
         {
