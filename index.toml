@@ -1430,7 +1430,7 @@ hash = "5bb7b172e3038c8d6f5ad29a3e11ba1c0ff82602043aafdbe2028a7302d0eac8"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/17633E6667C22EEC.snbt"
-hash = "a01801b2633c4b3aab3ce8749e3266b7339c5906f40eb9f846c26758415b8078"
+hash = "84c437e8ff146b06a628e79bd0842e62767064228cd619a447104e8423718860"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/17633E6667C22EEC.snbt.bak-20261120-202341"
@@ -2066,11 +2066,11 @@ hash = "ceb1dc8634faff50175f86901b52d42248284be5a0ab5bc7ff4e32a80b60d5ee"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/en_us.json"
-hash = "8b4ec9caad61abaf61937d7d90615ae65e267ea352922a948e30775ee6919d20"
+hash = "868ddd508e2783da12f2596c47913b753879cca112d98097c3d8aa8e3afd64c9"
 
 [[files]]
 file = "kubejs/assets/kubejs/lang/ja_jp.json"
-hash = "cb810164336d8a4a63cc6f862c3a965cb57482be8aa1399b847ccf41cc86ab59"
+hash = "cf8e22f6cb1ff52f12815b8d2e8b97a3d25ea0709e244abd31567e0ee7c029f2"
 
 [[files]]
 file = "kubejs/assets/kubejs/textures/block/dense_ore_certus_quartz.png"
@@ -2990,7 +2990,7 @@ hash = "1e8b16f603a807f7dc4a4a8b148394ec24a6fb39a16bc931a72fbc871fb46c74"
 
 [[files]]
 file = "kubejs/client_scripts/tooltip.js"
-hash = "9c95a7aa614c8027d0237166ff78335431625bdedf9409055529bd191fdc7cb4"
+hash = "2f4cfe9fbea7ed15f0900b8a6f94222a25d30b11aef8dee9a3eca72a76a25174"
 
 [[files]]
 file = "kubejs/config/client.properties"
@@ -4266,7 +4266,7 @@ hash = "4742314276f22697255293c62832b9e2332dfa2718f6d2102391bc947189281e"
 
 [[files]]
 file = "kubejs/server_scripts/astral_mekanism/normal/starlight.js"
-hash = "b8eefd8051f2573aa170830da2cef8c9ea6c2503cebe2a5bfdd2a33a81732686"
+hash = "05b5691fa6012c30b829486b1a86a321aca2e5c6e923e75d4a4f235e8cf8d0b5"
 
 [[files]]
 file = "kubejs/server_scripts/cognition/normal/ingot_downgrade.js"
@@ -4386,7 +4386,7 @@ hash = "8d611855714ce2b6afb0d25ea1c92dd6c458f7c47bfa56240bc772ab6ca812ae"
 
 [[files]]
 file = "kubejs/server_scripts/mekanism/normal/gas_valine3g.js"
-hash = "c62075cebe4622f0a10b9abe3f12eb25e111ce476e56b3c81acb8a616d0f7286"
+hash = "78cdd53b1643f807d4ca87dd70d6e5d662cc39faf0ac23ae9dc111220a6838f0"
 
 [[files]]
 file = "kubejs/server_scripts/mekanism/normal/gaugedropper.js"
@@ -4489,6 +4489,10 @@ file = "kubejs/server_scripts/mekanism/remove_machine_upgrade.js"
 hash = "7761006f25122c52e345ce7018a97e4da8dc35812815f05a720abb7b3b3d8660"
 
 [[files]]
+file = "kubejs/server_scripts/mekanism/temp/gas.js"
+hash = "fb4891066621c6c5f2e13b2fbd01ff940ca0a3dea56eda4603cdd8c6c2578f08"
+
+[[files]]
 file = "kubejs/server_scripts/mekanism_elements/normal/beryllium.js"
 hash = "976350582eabec453ca5ac7cb9c6a2842716345ae63216891d4fbde345c8cc20"
 
@@ -4542,11 +4546,11 @@ hash = "9a5302cdf7698cdc09599ba931d80817ff9d42ede7ad2a7e480519690d2ed17c"
 
 [[files]]
 file = "kubejs/server_scripts/multiblocked2/normal/gas_generator.js"
-hash = "da69e12396502fd34c9187e633592e5f0ef5d6ea5ce8982cee790be93c08721c"
+hash = "6c67bdc57477399de9579b6d812c0783c585cbaf694f83d54858ea38a887d8a3"
 
 [[files]]
 file = "kubejs/server_scripts/multiblocked2/normal/large_digital_assembly_table.js"
-hash = "bd414bea1a84185740c8dc10c2048050f3f0a395e3fe4191ba8f2f92187cd031"
+hash = "1f046d7b275aed0a5f15f78ea194237dd1a06d94472fec042b7a1e1e1fca28ed"
 
 [[files]]
 file = "kubejs/server_scripts/multiblocked2/normal/module_recipe.js"
@@ -5625,7 +5629,7 @@ metafile = true
 
 [[files]]
 file = "mods/just-enough-crafting-tree-ject.pw.toml"
-hash = "68a73532bf7fb0b898ed2e6c85f4127937a63f894f6b109205e78155fe943c09"
+hash = "3b909e93b69abeaa38931ba39b04aa3f99a2c17c5f1dd432118f4e754f1e9caa"
 metafile = true
 
 [[files]]
