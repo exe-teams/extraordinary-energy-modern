@@ -12,19 +12,19 @@ jobs:
     runs-on: ubuntu-slim
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: short-sha
-        uses: benjlevesque/short-sha@v3.0
+        uses: benjlevesque/short-sha@v5.0
 
       - name: Setup Java
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v6
         with:
           distribution: 'temurin'
           java-version: '17'
 
       - name: Install Packwiz
-        uses: actionhippie/install-packwiz@v1
+        uses: actionhippie/install-packwiz@v2
 
 
       - name: Inject nightly SHA into pack metadata
@@ -55,14 +55,14 @@ jobs:
           rm -rf ./build/server/overrides/LICENSE
 
       - name: Upload Client build result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: extraordinary_energy_modern-${{ inputs.ver }}
           path: ./build/client/
           retention-days: 30
 
       - name: Upload Server build result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: extraordinary_energy_modern-server-${{ inputs.ver }}
           path: ./build/server/
