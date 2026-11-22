@@ -258,6 +258,7 @@
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
+			description: ["中央にツールを置き、残り8枠にネザライトブロックを置くと耐久無限になります。"]
 			id: "66749D40CCB801F9"
 			subtitle: "何でも行ける"
 			tasks: [{
@@ -534,6 +535,17 @@
 				type: "item"
 			}]
 			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			id: "2FDF15B779EEF323"
+			tasks: [{
+				id: "20E0CDAE627CB9C7"
+				item: "ae2_ftbquest_detector:me_quests_detector"
+				type: "item"
+			}]
+			x: -1.5d
 			y: -1.0d
 		}
 	]

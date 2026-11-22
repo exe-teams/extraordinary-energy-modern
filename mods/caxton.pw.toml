@@ -1,6 +1,6 @@
 name = "Caxton"
 filename = "caxton-0.6.4+1.20.1-FORGE.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

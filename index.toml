@@ -258,7 +258,7 @@ hash = "2f1dc57800ab1f2a59728064e629bb439346eb3c7cc8d46bddce261f3787999d"
 
 [[files]]
 file = "config/MekanismMoreMachine/machine-usage.toml"
-hash = "a01bfb2fadc7bd26daf7f6e863060cf56fecde5d88d99006234b6cdcc48d1a02"
+hash = "62af00e0b8475774c7c18030a8daf7e4ffe94783c270a1a6b1cf69fdbb82ac60"
 
 [[files]]
 file = "config/MekanismMoreMachine/tiers.toml"
@@ -1422,7 +1422,7 @@ hash = "b3ff71f6e925b24a38e97ab4bef527f37f669e652a9e3a468e80846422ef9758"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1.snbt"
-hash = "04db0b257893abe55f74e4956a644638e50a71eef5b677a7cc5e22cfe815e74e"
+hash = "c45881668e2bf266271630e5cc0211e18af996a8c2f991be138cc209aae83f9c"
 
 [[files]]
 file = "config/ftbquests/quests/chapters/1.snbt.bak-20261120-202341"
@@ -4518,7 +4518,7 @@ hash = "3b9379c523106d3412f867caf2c816e7417bf4356be863048bd42e26ec898e5d"
 
 [[files]]
 file = "kubejs/server_scripts/minecraft/normal/mobdrop.js"
-hash = "59c713fb507a33e6efb783844b7dca44b1111510a314a21a008afc8574e76b09"
+hash = "6eddb02c5a603819a77b1226c1d8226c7d95f8e1bc203cbe42b28f360d5edc90"
 
 [[files]]
 file = "kubejs/server_scripts/minecraft/normal/nether.js"
@@ -4793,10 +4793,6 @@ file = "ldlib/assets/mbd2/multiblock/dimensional_blast_furnace.mb"
 hash = "0010ee38aebd5e31072b39946e498e8077163845b5160d23dfd13b5df23f9f8a"
 
 [[files]]
-file = "ldlib/assets/mbd2/multiblock/etheric_computer_array.mb"
-hash = "45e62d18694bde431945346a5d1500de67fae183f05d3ce0b1c6449955e31304"
-
-[[files]]
 file = "ldlib/assets/mbd2/multiblock/fusion_controller.mb"
 hash = "1af39fc3577c51ebc093924ade054b3cb03ea30a6b8c1ba09ba4ea97884e60d9"
 
@@ -4851,10 +4847,6 @@ hash = "985743ec1bbcf3284ee38f2e538af0d4123dc80888464974c10baa993be0125d"
 [[files]]
 file = "ldlib/assets/mbd2/recipe_type/dimensional_blast_smelting.rt"
 hash = "2d91e981d394deba9826d57436823e12f6ce1993e461bee4811546b02cf4ff7d"
-
-[[files]]
-file = "ldlib/assets/mbd2/recipe_type/etheric_computing.rt"
-hash = "4492bf80a91cca20f2502d92e466a0242a34e03d527a3876ccad1af64eb3a045"
 
 [[files]]
 file = "ldlib/assets/mbd2/recipe_type/experience_generate.rt"
@@ -4934,6 +4926,11 @@ metafile = true
 [[files]]
 file = "mods/ae2-crafting-tree.pw.toml"
 hash = "810f804314506f9cb248a13f41ae7ef1e50679bfd9dcb0888d50ae70da4a4181"
+metafile = true
+
+[[files]]
+file = "mods/ae2-ftbquest-detector.pw.toml"
+hash = "066c0a3bbd48eeb60e12bca950b10613369876468207b8df6bb3858af50c9d55"
 metafile = true
 
 [[files]]
@@ -5143,7 +5140,7 @@ metafile = true
 
 [[files]]
 file = "mods/caxton.pw.toml"
-hash = "07cfd9f6becfe883833d5d3ad19120f6e2792455db5419b6abac2cc10c7165ab"
+hash = "612f3f3434e455f20e86d736dffd5bc059c7f18e1f17361b1560f465de3f5728"
 metafile = true
 
 [[files]]
@@ -5723,7 +5720,7 @@ metafile = true
 
 [[files]]
 file = "mods/mekalus-oculus-fork-with-fixed-mekanism-mekasuit.pw.toml"
-hash = "58c66715a20423f327e23754c6542c0e4c3f50a485252df4e7e1be820487688c"
+hash = "fa0feb7b7870d9dbbe7bf084754c3315378306e7be2b287287ca58b0f6dc7f90"
 metafile = true
 
 [[files]]
@@ -5863,12 +5860,7 @@ metafile = true
 
 [[files]]
 file = "mods/multiblocked2.pw.toml"
-hash = "cb58129149ca4439139766b33938d3b4759a4495659aae4af93576dd1fb819fd"
-metafile = true
-
-[[files]]
-file = "mods/no-chat-reports.pw.toml"
-hash = "36978dd026fcf9884e8b76633b126dfede9603bf1700d23faa7847ccdbbe5005"
+hash = "de18c05f0862dbbf1855da88fecef4e1113d67097e89be510597492d15861a4f"
 metafile = true
 
 [[files]]

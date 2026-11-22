@@ -882,6 +882,26 @@
 			x: -2.0d
 			y: 6.5d
 		}
+		{
+			dependencies: ["32BA30BD4C4537A0"]
+			id: "0D1B57DC6CAEBC79"
+			tasks: [
+				{
+					id: "59F2784E53B87C2F"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6734819293E470D8"
+					item: "minecraft:white_dye"
+					type: "item"
+				}
+			]
+			title: "偽造牛乳"
+			x: -5.0d
+			y: -9.0d
+		}
 	]
 	subtitle: ["{ftbquests.chapter.1.subtitle0}"]
 	title: "{ftbquests.chapter.1.title}"
