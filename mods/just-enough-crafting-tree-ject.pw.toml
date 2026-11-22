@@ -1,6 +1,6 @@
 name = "Just Enough Crafting Tree (JECT)"
 filename = "[1.20.1] forge-JECT-2.2.0.jar"
-side = "both"
+side = "client"
 
 [download]
 hash-format = "sha1"

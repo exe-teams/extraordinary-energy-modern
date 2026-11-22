@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
         },
         gasOutput: {
           amount: 1,
-          gas: `mek1000:astral_valine3g`
+          gas: `mekanism_animation_injector:operation_gas`
         },
         itemInput: {
           ingredient: {
@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
     },
     gasOutput: {
       amount: 1,
-      gas: `mek1000:astral_valine3g`
+      gas: `mekanism_animation_injector:operation_gas`
     },
     itemInput: {
       ingredient: {
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     },
     gasOutput: {
       amount: 1,
-      gas: `mek1000:astral_valine3g`
+      gas: `mekanism_animation_injector:operation_gas`
     },
     itemInput: {
       ingredient: {
@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     },
     gasOutput: {
       amount: 1,
-      gas: `mek1000:astral_valine3g`
+      gas: `mekanism_animation_injector:operation_gas`
     },
     itemInput: {
       ingredient: {
@@ -144,7 +144,7 @@ ServerEvents.recipes(event => {
     },
     gasOutput: {
       amount: 1,
-      gas: `mek1000:astral_valine3g`
+      gas: `mekanism_animation_injector:operation_gas`
     },
     itemInput: {
       ingredient: {

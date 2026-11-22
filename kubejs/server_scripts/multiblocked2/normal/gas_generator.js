@@ -18,4 +18,12 @@ ServerEvents.recipes(event => {
             .outputFE(2147483647)
             .inputGases('200x mek1000:dvt')
         )
+
+    event.recipes.mek1000.gas_generator()
+        .id("mek1000:gas_generator_2")
+        .duration(20 * 100)
+        .perTick(builder => builder
+            .outputFE(2147483647)
+            .inputGases("200x mekanism_the_valine:deuterium_valine3g_tritium")
+        )
 })

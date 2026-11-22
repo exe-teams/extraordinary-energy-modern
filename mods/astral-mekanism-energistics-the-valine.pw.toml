@@ -1,0 +1,13 @@
+name = "Astral Mekanism & Energistics :The Valine"
+filename = "ame_the_valine-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "434e1f24de9ec48a86ec633ac635ca64dfba3f1c"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8246337
+project-id = 1567482

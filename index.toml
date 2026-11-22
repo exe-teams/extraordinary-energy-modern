@@ -5054,6 +5054,11 @@ hash = "a01f78258827eb6296f3b8bc4c4e807a5a87e40abb8ccfe3c53f499e54753bfa"
 metafile = true
 
 [[files]]
+file = "mods/astral-mekanism-energistics-the-valine.pw.toml"
+hash = "01dd672c74fb56ccdeaf8dbc912a0e2e8ce1f02dd82d845f5d4873b121e09f51"
+metafile = true
+
+[[files]]
 file = "mods/astral-mekanism.pw.toml"
 hash = "8872241c6cf1281a891f008fbaa30cd50b8aa118a9819a6f626e57e2dc37bf4c"
 metafile = true
