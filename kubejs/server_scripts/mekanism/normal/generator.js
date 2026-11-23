@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
         "type": "mekanism:activating",
         "input": {
             "amount": 1,
-            "gas": "mek1000:valine3g"
+            "gas": "mekanism_the_valine:valine3g"
         },
         "output": {
             "gas": "mekanismgenerators:fusion_fuel", "amount": 1000

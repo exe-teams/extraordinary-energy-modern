@@ -75,4 +75,15 @@ ServerEvents.recipes(event => {
         "gasOutput": { "gas": "mek1000:astral_valine3g", "amount": 10000 },
         "itemOutput": {"item": 'astral_mekanism:illusion_control_circuit' },
     })
+
+    event.custom({
+        "type": "mekanism:activating",
+        "input": {
+            "amount": 1,
+            "gas": "mek1000:valine3g"
+        },
+        "output": {
+            "gas": "mekanismgenerators:fusion_fuel", "amount": 1000
+        }
+    })
 })

@@ -5173,6 +5173,11 @@ hash = "d79ea108e2df8e7fe6a76e6cf5a46f3945e972e94ca023e208d603bd43d86e97"
 metafile = true
 
 [[files]]
+file = "mods/circulation-flow-networks.pw.toml"
+hash = "0e1f7e6d064527bdc8e9eedd10e3c5239268a98415088e28b07cffd4b3d90324"
+metafile = true
+
+[[files]]
 file = "mods/climb-ladders-fast.pw.toml"
 hash = "caf5146f2bb9684ad6ba57da0a0564f3693796e78e5cc40d24260e42b4d049ff"
 metafile = true
@@ -6050,6 +6055,11 @@ metafile = true
 [[files]]
 file = "mods/stack-upgrade-integration.pw.toml"
 hash = "ce5c260525aab4a4eae3a986eb15dff0f5548a3daf1888600b28ff480d795340"
+metafile = true
+
+[[files]]
+file = "mods/super-factory-manager.pw.toml"
+hash = "288a4fcae974825094f78dbd81052c28a09f8611e72fbabf8441f72b0152c757"
 metafile = true
 
 [[files]]
