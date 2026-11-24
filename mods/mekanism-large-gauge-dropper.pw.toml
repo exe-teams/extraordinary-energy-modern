@@ -1,13 +1,13 @@
 name = "Mekanism:Large Gauge Dropper"
-filename = "mekanism_large_gauge_dropper-1.0.0.jar"
+filename = "mekanism_large_gauge_dropper-1.20.1-1.0.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "2e60b4a100e84cd83f4e1b230094cbb3d379b390"
+hash = "f8b88b41637e57f4922fe421ffda9d7807803804"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8043391
+file-id = 8530999
 project-id = 1534638

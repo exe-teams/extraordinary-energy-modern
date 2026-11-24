@@ -16,6 +16,7 @@
   "mek1000.material.diamond": "ダイヤモンド",
   "mek1000.material.emerald": "エメラルド",
   "mek1000.material.debri": "古代の残骸",
+  "mek1000.material.naquadah": "ナクアダ",
   "mek1000.teleport.desc.dim": "ディメンション : %s",
   "mek1000.teleport.desc.x": "X : %s",
   "mek1000.teleport.desc.y": "Y : %s",
@@ -104,7 +105,6 @@
   "mek1000.rockbreak_simulate": "砕石シミュレート",
   "mek1000.experience_generate": "知識変換",
   "mek1000.dimensional_blast_smelting": "多次元精錬",
-  "mek1000.etheric_computing": "エーテリック演算処理",
   "mek1000.skyblock_craft": "空島製造",
   "block.mek1000.apt_helper": "APT設置補助",
   "mek1000.apt_helper.desc": "マルチブロックビルダーを使用し、設置の補助に利用してください。",
@@ -135,8 +135,6 @@
   "block.mek1000.library_of_babel": "バベルの図書館",
   "mek1000.dimensional_blast_furnace.desc": "既視感",
   "block.mek1000.dimensional_blast_furnace": "多次元高炉",
-  "mek1000.etheric_computer_array.desc": "コインも掘れる",
-  "block.mek1000.etheric_computer_array": "エーテル演算配列",
   "mek1000.super_pressure_squeezer.desc": "ASMR",
   "mek1000.super_pressure_squeeze": "超高圧圧搾",
   "block.mek1000.super_pressure_squeezer": "超高圧圧搾機",
@@ -284,5 +282,7 @@
   "block.mek1000.large_item_output":"巨大アイテム搬出ポート",
   "block.mek1000.ae_input":"MEインターフェース搬入ポート",
   "block.mek1000.large_imitation_sps_port":"桁違いなエネルギー搬入ポート",
-  "mek1000.auto_output_function.desc":"外部への自動搬出機能を持ちます"
+  "mek1000.auto_output_function.desc":"外部への自動搬出機能を持ちます",
+
+  "singularity.mek1000.creative_control_circuit":"クリエイティブ制御回路"
 }

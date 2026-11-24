@@ -48,11 +48,6 @@ ItemEvents.tooltip((event) => {
     Text.translate("mek1000.multi.desc").aqua(),
   ]);
 
-  event.add("mek1000:etheric_computer_array", [
-    Text.translate("mek1000.etheric_computer_array.desc"),
-    Text.translate("mek1000.multi.desc").aqua(),
-  ]);
-
   event.add("mek1000:advanced_gas_burning_generator", [
     Text.translate("mek1000.advanced_gas_burning_generator.desc"),
   ]);

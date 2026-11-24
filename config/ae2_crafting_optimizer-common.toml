@@ -1,0 +1,265 @@
+
+[general]
+	#Master switch for all ACO planning, execution-budget, exact-count, and integration behavior.
+	enableOptimizer = true
+
+[optimizationDomains]
+	#Pattern Provider generation, lookup, and refresh optimizations.
+	patternProvider = true
+	#Craft calculation memoization, compiled graphs, checked arithmetic, and plan caches.
+	craftingPlanning = true
+	#Standard AE2 execution budgets, sequential dispatch, and public V2 transactions.
+	craftingExecution = true
+	#Exact-count planning and ACO-owned execution for standard AE2 CPUs.
+	bigInteger = true
+	#Read-only recipe intent and add-on lookup caches. External add-ons retain execution ownership.
+	optionalIntegration = true
+
+[craftingPlanning]
+	#Share one running Future only for an identical requester, output, amount, and strategy.
+	deduplicateActiveCalculations = true
+	#Maximum age of a reusable running calculation, in ticks.
+	#Range: 1 ~ 1200
+	activeCalculationWindowTicks = 200
+	#Maximum in-flight calculations indexed per AE2 crafting service. Eviction never cancels the calculation.
+	#Range: 1 ~ 1048576
+	activeCalculationMaximumEntries = 4096
+	#Log calculation single-flight hits. Disabled to avoid normal-operation spam.
+	logCalculationDeduplication = false
+	#Cache short-lived completed plans. Storage/provider generation changes clear them earlier.
+	cacheCompletedPlans = true
+	#Also cache successful plans. Disabled because stock can change before submission.
+	cacheSuccessfulPlans = false
+	#Maximum number of completed plans kept in memory.
+	#Range: 0 ~ 65536
+	completedPlanCacheSize = 1024
+	#Completed-plan cache lifetime in ticks.
+	#Range: 1 ~ 1200
+	completedPlanCacheTtlTicks = 40
+	#Memoize calculation-invariant queries only inside one crafting calculation.
+	memoizeCalculationQueries = true
+	#Coalesce duplicate provider refreshes in one tick and flush before every crafting read.
+	coalesceProviderRefreshes = true
+	#Rebuild provider indexes only when immutable pattern content or priority changes.
+	trackProviderGenerations = true
+	#Allow root order amounts through Long.MAX_VALUE when UELM does not own this surface.
+	enableLongRootAmounts = true
+	#Compile immutable generation-keyed recipe graphs for strict planning paths.
+	enableCompiledGraph = true
+	#Replace AE2 planning only after the strict proof and Shadow qualification contracts pass.
+	enableAuthoritativePlanner = false
+	#Allow proven signed-long requests to use the compiled planner without changing recipe choice.
+	enableProofQualifiedLongPlans = true
+	#Detect overflow at AE2 arithmetic boundaries instead of allowing wrapped counts.
+	enableCheckedArithmetic = true
+	#Compare eligible compiled plans with AE2 results without changing the AE2 result.
+	enableShadowMode = true
+	#Log bounded Shadow mismatches.
+	logShadowMismatches = true
+	#Skip Shadow comparison above this pattern count.
+	#Range: 1 ~ 1048576
+	shadowMaximumPatterns = 262144
+	#Matching AE2 comparisons required for the same generation-keyed root program.
+	#Range: 0 ~ 1048576
+	authoritativeMinimumShadowMatches = 64
+	#Require prior matching long-range Shadow evidence before accepting a proven wide plan.
+	requireWidePlanShadowQualification = false
+
+[craftingExecution]
+	#Bound standard AE2 pattern pushes per CPU without changing capacity or displayed co-processors.
+	throttleCraftingExecution = true
+	#Maximum effective co-processors spent by one CPU in an execution window.
+	#Range: 1 ~ 2147483646
+	maxEffectiveCoprocessorsPerCpu = 264192
+	#Adapt the next CPU budget from measured execution time.
+	adaptiveBudget = true
+	#Target wall-clock milliseconds for one CPU burst.
+	#Range: 1 ~ 50
+	targetExecutionMillis = 4
+	#Minimum adaptive operation allowance for an active CPU.
+	#Range: 1 ~ 2147483646
+	minimumAdaptiveOperations = 1024
+	#Share a measured execution budget between standard AE2 CPUs on one grid.
+	sharedGridBudget = true
+	#Target milliseconds spent by all standard AE2 CPUs on one grid per tick.
+	#Range: 1 ~ 45
+	sharedGridBudgetMillis = 8
+	#Minimum progress allowance after a grid consumes its shared budget.
+	#Range: 1 ~ 65536
+	minimumSharedOperations = 1
+	#Log execution-budget caps.
+	logExecutionThrottling = false
+	#Apply only ACO's execution budget to NeoECO CPUs; NeoECO keeps execution ownership.
+	throttleNeoEcoAeExecution = true
+	#Run AE2's original one-pattern dispatch in measured waves until its time budget or backpressure.
+	enableInstantDispatch = true
+	#Per-CPU sequential dispatch budget in milliseconds.
+	#Range: 1 ~ 45
+	instantDispatchBudgetMillis = 4
+	#Configured cold wave request; the unmeasured ceiling below still caps the first wave.
+	#Range: 1 ~ 65536
+	instantDispatchProbeOperations = 65536
+	#Hard first-wave ceiling before ACO has measured one normal AE2 push.
+	#Range: 1 ~ 65536
+	instantDispatchMaximumUnmeasuredWave = 1024
+	#Maximum operations in one measured dispatch wave.
+	#Range: 1 ~ 1048576
+	instantDispatchMaximumWave = 65536
+	#Maximum V2 adapter transactions per call. Sequential dispatch is time-budgeted separately.
+	#Range: 1 ~ 65536
+	maximumInstantTransactions = 1024
+	#Enable the public prepare/commit/account/reconcile V2 contract for explicitly registered adapters.
+	enableTransactionalBatchingV2 = true
+	#Persist non-terminal V2 transactions before target ownership transfer.
+	persistTransactionJournal = true
+	#Maximum non-terminal V2 transaction records.
+	#Range: 16 ~ 16384
+	transactionJournalMaximumEntries = 16384
+	#Ticks between bounded recovery scans.
+	#Range: 1 ~ 1200
+	transactionReconciliationTicks = 20
+	#Maximum executions offered to one externally registered V2 adapter transaction.
+	#Range: 1 ~ 1048576
+	maximumBatchExecutions = 65536
+
+[bigInteger]
+	#Expose ACO's versioned exact-count plan and host APIs.
+	enableBackend = true
+	#Capture exact counts from supported storage while AE2 receives a saturated long facade.
+	enableExactInventorySnapshots = true
+	#Calculate exact plan counts and CPU-byte costs beyond Long.MAX_VALUE without approximation.
+	enableAtomicWidePlans = true
+	#Execute exact jobs owned by a standard AE2 CPU; external CPU add-ons retain their own execution.
+	enableStandardAe2ExactExecution = true
+	#Maximum accepted exact-count magnitude in binary bits.
+	#Range: 64 ~ 54427
+	maximumBits = 54427
+	#Maximum executions exposed to a long/int adapter in one exact execution window.
+	#Range: 1 ~ 1048576
+	executionWindow = 65536
+	#Maximum summaries carried by one exact crafting-status page.
+	#Range: 16 ~ 16384
+	statusPageEntries = 1024
+	#Aggregate memory-accounting budget for exact-count magnitudes in one CPU runtime, in MiB.
+	#Range: 32 ~ 4096
+	runtimeCountBudgetMiB = 256
+	#Log exact submission decline reasons without changing fail-closed decisions.
+	logSubmissionDeclines = true
+
+[exactVectorCrafting]
+	#Execute strictly proven ordinary crafting DAGs as quantity-independent physical transactions.
+	enabled = true
+	#Take physical execution ownership only for a standard AE2 exact job after all preflight checks pass.
+	enablePhysicalExecution = true
+	#Maximum distinct deterministic pattern nodes in one exact transaction.
+	#Range: 1 ~ 1048576
+	maximumPatternNodes = 1024
+	#Maximum distinct external input keys in one exact transaction.
+	#Range: 1 ~ 65536
+	maximumUniqueInputKeys = 128
+	#Maximum distinct final and fixed remaining-output keys in one exact transaction.
+	#Range: 1 ~ 65536
+	maximumUniqueOutputKeys = 128
+	#Maximum new exact ownership transfers per ME grid and tick.
+	#Range: 1 ~ 64
+	maximumStartsPerGridPerTick = 1
+	#Maximum physical recipe nodes inspected per grid and tick; order quantity never controls this loop.
+	#Range: 1 ~ 1048576
+	maximumActiveStagesPerGridPerTick = 256
+	#Soft main-thread scheduling budget per grid, measured from exact processing start.
+	#Range: 1 ~ 45
+	gridTimeBudgetMillis = 2
+	#Log exact execution wait-state transitions without periodic repeats.
+	logExecutionStalls = true
+	#Prove exact input release and final output insertion before ownership transfer.
+	verifyStorageRouteBeforeOwnership = true
+
+[optionalIntegrations]
+	#Keep AppliedE temporary patterns on AppliedE/AE2-owned lifecycle paths.
+	enableAppliedECompatibility = true
+	#Never compile request-sized AppliedE TransmutationPattern instances as fixed recipes.
+	forceAe2PlannerForTransmutationPatterns = true
+	#Treat AppliedE EMC providers as dynamic while still coalescing duplicate notifications.
+	treatAppliedEProviderAsDynamic = true
+	#Enable read-only lookup caches for supported add-on machines.
+	enableAddonMachineCaches = true
+	#Cache validated Circuit Cutter recipe candidates by exact immutable input signature.
+	cacheCircuitCutterRecipes = true
+	#Cache exact no-recipe Circuit Cutter results until input change or datapack reload.
+	cacheCircuitCutterNegativeResults = true
+	#Maximum Circuit Cutter signatures retained until reload.
+	#Range: 16 ~ 262144
+	circuitCutterCacheSize = 4096
+	#Reuse an AdvancedAE Reaction Chamber recipe only until its input generation changes.
+	cacheReactionChamberRecipe = true
+	#Cache AE2 Overclock reflection metadata, not machine results.
+	cacheAe2OverclockReflection = true
+	#Use prebuilt MethodHandles with reflection fallback for cached metadata.
+	useAe2OverclockMethodHandles = true
+	#Reuse upgrade counts for the same machine during one server tick.
+	cacheAe2OverclockUpgradeCounts = true
+	#Reuse Assembly Matrix thread totals during one tick with mutation invalidation.
+	cacheAssemblerMatrixThreadCounts = true
+	#Reuse Assembly Matrix busy totals during one tick with status invalidation.
+	cacheAssemblerMatrixBusyCount = true
+	#Coalesce identical visual/status broadcasts within one tick.
+	coalesceAssemblerMatrixStatusUpdates = true
+	#Reuse a validated Matrix crafter route until thread or structure generation changes.
+	cacheAssemblerMatrixRouting = true
+	#Capture short-lived Pattern Provider recipe intent without taking machine execution ownership.
+	enableRecipeIntentBridge = true
+	#Record successful Pattern Provider pushes as bounded machine-side hints.
+	capturePatternProviderRecipeIntents = true
+	#Recipe-intent lifetime in ticks.
+	#Range: 1 ~ 600
+	recipeIntentTtlTicks = 20
+	#Hard cap for captured recipe-intent entries.
+	#Range: 16 ~ 1048576
+	maximumRecipeIntentEntries = 4096
+	#Try output-indexed GTCEu candidates first, then let GTCEu validate and own the recipe.
+	enableGtceuRecipeIntentFastPath = true
+	#Maximum intent-matched GTCEu candidates prepended to its original iterator.
+	#Range: 1 ~ 1024
+	gtceuMaximumCandidates = 16
+	#Maximum output indexes retained for GTCEu recipe types.
+	#Range: 1 ~ 1024
+	gtceuIndexCacheSize = 64
+	#Maximum controller-to-input distance for GTCEu intent association, in blocks.
+	#Range: 0 ~ 64
+	gtceuSearchRadius = 16
+	#Maximum nearby intents inspected for one GTCEu recipe search.
+	#Range: 1 ~ 4096
+	gtceuNearbyMaximumEntries = 64
+	#Log GTCEu intent hits and bounded candidate counts.
+	logGtceuRecipeIntentFastPath = false
+	#Try output-indexed Mekanism candidates first, then run Mekanism's own recipe test.
+	enableMekanismRecipeIntentFastPath = true
+	#Maximum intent-matched Mekanism candidates tested before its original lookup.
+	#Range: 1 ~ 1024
+	mekanismMaximumCandidates = 16
+	#Maximum output indexes retained for Mekanism recipe types.
+	#Range: 1 ~ 1024
+	mekanismIndexCacheSize = 128
+	#Reuse a validated candidate only while the originating intent remains current.
+	cacheResolvedRecipeIntents = true
+	#Maximum resolved intent entries per optional integration.
+	#Range: 16 ~ 1048576
+	resolvedIntentCacheSize = 8192
+	#Log Mekanism intent hits and bounded candidate counts.
+	logMekanismRecipeIntentFastPath = false
+	#Log each captured recipe intent. Intended only for targeted diagnostics.
+	logCapturedRecipeIntents = false
+	#Log recipe-intent expiry and hard-cap eviction.
+	logRecipeIntentRegistryEvictions = false
+
+[diagnostics]
+	#Log crafting calculations above the configured duration.
+	logSlowCraftCalculations = true
+	#Slow calculation threshold in milliseconds.
+	#Range: 1 ~ 300000
+	slowCraftCalculationMillis = 500
+	#Log bounded cache statistics.
+	logCacheStatistics = false
+	#Write structured planning and exact-execution boundary events to debug.log without per-tick success spam.
+	logCraftingDecisionFlow = true
+

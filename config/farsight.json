@@ -1,6 +1,23 @@
 {
   "maxRenderDistance": {
-    "desc:": "Maximum allowed render distance, default 64",
+    // Maximum allowed render distance, changes require a game restart. 
+    // Default 64
     "maxRenderDistance": 64
+  },
+
+  "chunkPreview": {
+    // Enables chunk preview feature, which enables saving and loading previously visited chunks to/from disk,
+    // Default true
+    "enabled": true,
+
+    // Set the speed at which chunk preview loads chunks from disk, 
+    // Default and minimum 1 Chunk per tick(20 per second)
+    "previewChunkLoadSpeed": 1
+  },
+
+  "debugLogging": {
+    // Enables debug logging to latest.log, 
+    // Default false
+    "debugLogging": false
   }
 }

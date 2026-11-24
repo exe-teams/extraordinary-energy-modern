@@ -163,7 +163,7 @@
 			subtitle: "私も、飛べる！"
 			tasks: [{
 				id: "2A6F01B6C7C2A67D"
-				item: "better_angel_ring:angel_ring"
+				item: "execore:airborne_mining_charm"
 				type: "item"
 			}]
 			x: -1.5d
@@ -189,36 +189,16 @@
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
+			description: ["中央にツールを置き、残り8枠にネザライトブロックを置くと耐久無限になります。"]
 			id: "66749D40CCB801F9"
-			rewards: [{
-				id: "693D8464C66F0D56"
-				item: {
-					Count: 1
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "g_abun:absolutelyunbreakable"
-							lvl: 1s
-						}]
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "多分壊れない"
+			subtitle: "何でも行ける"
 			tasks: [{
-				id: "0E6A85C7F28454B6"
-				item: {
-					Count: 1
-					id: "minecraft:enchanted_book"
-					tag: {
-						StoredEnchantments: [{
-							id: "g_abun:absolutelyunbreakable"
-							lvl: 1s
-						}]
-					}
-				}
+				count: 8L
+				id: "0ECDE3EF46D46ABF"
+				item: { Count: 8, id: "minecraft:netherite_block" }
 				type: "item"
 			}]
+			title: "壊れなくする方法"
 			x: -0.5d
 			y: -2.0d
 		}
@@ -451,6 +431,11 @@
 		{
 			dependencies: ["016780D32B1ABC49"]
 			id: "12FF2F07AB7D1E55"
+			rewards: [{
+				id: "0D23AA0B783C36CD"
+				type: "xp"
+				xp: 5000
+			}]
 			tasks: [
 				{
 					id: "28269F5DA54A6857"
@@ -481,6 +466,17 @@
 				type: "item"
 			}]
 			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["016780D32B1ABC49"]
+			id: "2FDF15B779EEF323"
+			tasks: [{
+				id: "20E0CDAE627CB9C7"
+				item: "ae2_ftbquest_detector:me_quests_detector"
+				type: "item"
+			}]
+			x: -1.5d
 			y: -1.0d
 		}
 	]

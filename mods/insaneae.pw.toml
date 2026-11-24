@@ -1,0 +1,13 @@
+name = "InsaneAE"
+filename = "insaneae-1.20.1-1.1.3.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "11075a9c630ffb0ab3799368d6fbee9ef19f196a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 9474055
+project-id = 1627326

@@ -1,0 +1,10 @@
+// Compost colors for ae2_overclocked. You may add your own colors, change existing ones, or remove colors that aren't needed.
+capacity_card, #b1a59e
+overclock_card, #b4a8a1
+parallel_card, #ac9bbc
+parallel_card_1024x, #c28eb6
+parallel_card_64x, #bfb2b1
+parallel_card_8x, #c3b4d3
+parallel_card_max, #afaed0
+super_energy_card, #b2c8ac
+super_speed_card, #b2a8a1

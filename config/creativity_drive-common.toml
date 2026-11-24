@@ -1,0 +1,8 @@
+#If true, an empty Mekanism creative bin or tank, an AE2 creative energy cell, or a Mekanism creative energy cube inserted into an ME drive can be extracted infinitely.
+#Extracted creative energy cells place as full cells. Extracted creative energy cubes are full and configured to output on every side.
+#Other energy cube tiers are not duplicated. Filled bins and tanks still expose their contents infinitely regardless of this setting.
+#空のMekanismクリエイティブビン／タンク、AE2のクリエイティブエネルギーセル、またはMekanismのクリエイティブエナジーキューブをMEドライブに入れると、そのアイテム自体を無限に取り出せるようにする。
+#取り出したクリエイティブエネルギーセルは設置すると電力が上限になる。取り出したクリエイティブエナジーキューブは電力が満タンで、全面が出力になる。
+#クリエイティブ以外のエナジーキューブは複製しない。中身が入っているビンやタンクは、この設定に関係なく中身を無限に供給する。
+duplicateEmptyContainers = true
+

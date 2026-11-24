@@ -1,0 +1,8 @@
+
+#Machine Energy Usage Config. This config is synced from server to client.
+[usage]
+	#Energy per operation tick (Joules).
+	essentialSqueezer = "50"
+	#Energy per operation tick (Joules).
+	essentialDryingBasin = "50"
+

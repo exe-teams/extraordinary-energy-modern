@@ -185,8 +185,45 @@
 				item: "mekanism_extras:infinite_control_circuit"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.0d
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"3EE1C779AEB0D16D"
+				"3FC57EAE35A4448E"
+			]
+			description: [
+				"&aNaquadah Uranium Fuel&rを燃料にして発電します"
+				"生産される蒸気を加工することで、&aポロニウム&rを大量に得ることができます。できるだけ早めに作りましょう。"
+			]
+			icon: "astral_mekanism:essential_compact_naquadah_reactor"
+			id: "0A5CBA30DFD5CDE7"
+			rewards: [{
+				count: 2
+				id: "243580CF86337A0F"
+				item: "mekanism_extras:infinite_control_circuit"
+				type: "item"
+			}]
+			subtitle: "超強化済み、より良いポロニウムの供給源"
+			tasks: [{
+				id: "4D657FDC75A212CB"
+				item: "astral_mekanism:essential_compact_naquadah_reactor"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3FC57EAE35A4448E"]
+			id: "3F59FBB68176B429"
+			tasks: [{
+				id: "44DF6A1E212067C1"
+				item: "astral_mekanism:essential_compact_fusion_reactor"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["16F1DD1570039FA7"]

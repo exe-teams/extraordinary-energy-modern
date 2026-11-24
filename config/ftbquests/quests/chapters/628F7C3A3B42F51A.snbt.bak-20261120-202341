@@ -1,0 +1,325 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "628F7C3A3B42F51A"
+	group: ""
+	id: "628F7C3A3B42F51A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["{ftbquests.chapter.628F7C3A3B42F51A.quest1.description1}"]
+			icon: "minecraft:grass_block"
+			id: "7F4B21A42724338C"
+			incompatible: ["5C124BC2B5689E7B"]
+			optional: true
+			size: 3.0d
+			tasks: [{
+				id: "7B0EEF4275756816"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.628F7C3A3B42F51A.quest1.title}"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			description: [
+				"{ftbquests.chapter.628F7C3A3B42F51A.quest2.description1}"
+				""
+				"{ftbquests.chapter.628F7C3A3B42F51A.quest2.description2}"
+			]
+			icon: "minecraft:campfire"
+			id: "5C124BC2B5689E7B"
+			incompatible: ["7F4B21A42724338C"]
+			optional: true
+			rewards: [{
+				auto: "enabled"
+				command: "/ftbquests block_rewards true"
+				elevate_perms: true
+				id: "4E22746C433AC38C"
+				type: "command"
+			}]
+			size: 3.0d
+			subtitle: "{ftbquests.chapter.628F7C3A3B42F51A.quest2.subtitle}"
+			tasks: [{
+				id: "534D54DF9F9AC04F"
+				type: "checkmark"
+			}]
+			title: "{ftbquests.chapter.628F7C3A3B42F51A.quest2.title}"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			description: ["{ftbquests.chapter.628F7C3A3B42F51A.quest3.description1}"]
+			id: "58D19A0956CF8EDC"
+			optional: true
+			rewards: [{
+				id: "34D8AE00B08E5C3C"
+				ignore_reward_blocking: true
+				item: "mek1000:skyblock_crafter"
+				type: "item"
+			}]
+			secret: true
+			tasks: [{
+				biome: "minecraft:the_void"
+				disable_toast: true
+				id: "3E020EAD90DC99A3"
+				secret: true
+				type: "biome"
+			}]
+			title: "{ftbquests.chapter.628F7C3A3B42F51A.quest3.title}"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["7F4B21A42724338C"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "04D89876E2AEB9F0"
+			optional: true
+			rewards: [
+				{
+					id: "4B12AFD6AF7F33F7"
+					item: "execore:airborne_mining_charm"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "22A31E1CFA8E4269"
+					item: "execore:speed_charm_3"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7D9CA40FC1619746"
+					item: "execore:speed_charm_1"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0F66891E8F541D45"
+					item: {
+						Count: 1
+						id: "evolvedmekanism:plaslitherite_paxel"
+						tag: {
+							Damage: 0
+							Enchantments: [
+								{
+									id: "minecraft:efficiency"
+									lvl: 5s
+								}
+								{
+									id: "minecraft:silk_touch"
+									lvl: 1s
+								}
+							]
+							Unbreakable: 1b
+							damage: 0.0d
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4EE63C701333FC01"
+					item: {
+						Count: 1
+						id: "evolvedmekanism:plaslitherite_paxel"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:efficiency"
+								lvl: 5s
+							}]
+							Unbreakable: 1b
+							damage: 0.0d
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "1CAC528E4C4C7C05"
+					item: "ae2wtlib:quantum_bridge_card"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "4F2E7808DD614224"
+					item: "ae2:quantum_link"
+					team_reward: false
+					type: "item"
+				}
+				{
+					count: 8
+					id: "730E9B5C0D783A6B"
+					item: "ae2:quantum_ring"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7AD3FB59E94872FE"
+					item: "ae2:tiny_tnt"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "707BF0595EC07994"
+					item: "ae2:ender_dust"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "7B60F2E727B576B1"
+					item: "ae2:singularity"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0FD4E3C7C224DC4D"
+					item: {
+						Count: 1
+						id: "wcwt:wireless_comprehensive_work_terminal"
+						tag: {
+							wcwt: {
+								insert_config: { }
+								pattern_encoding_logic: { }
+								pickup_config: { }
+							}
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "0337515D31A4BFE8"
+					item: "ae_monitornet:wireless_throughput_terminal"
+					team_reward: false
+					type: "item"
+				}
+				{
+					id: "3FAD2BC114A0761E"
+					item: {
+						Count: 1
+						id: "insaneae:portable_item_cell_4t"
+						tag: {
+							ic: 131153L
+							insaneae_cell_id: [I;
+								674152538
+								-1461957352
+								-1476963973
+								-2110938788
+							]
+							insaneae_cell_summary: {
+								preview: [
+									{
+										"#": 65536L
+										"#c": "ae2:i"
+										id: "ae2:blank_pattern"
+									}
+									{
+										"#": 65536L
+										"#c": "ae2:i"
+										id: "ae2:fluix_smart_cable"
+									}
+									{
+										"#": 32L
+										"#c": "ae2:i"
+										id: "insaneae:insane_pattern_provider"
+									}
+									{
+										"#": 32L
+										"#c": "ae2:i"
+										id: "insaneae:insane_interface"
+									}
+									{
+										"#": 4L
+										"#c": "ae2:i"
+										id: "ae2omnicells:quantum_crafting_storage_256k_block"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "wcwt:tool_slots_box_card"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "ae2:energy_acceptor"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "insaneae:elite_solar_panel"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "ae2:crafting_terminal"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "astral_mekanism:engineering_energy_cell"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "insaneae:quantum_cpu"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "expatternprovider:ex_drive"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "wcwt:cosmetic_armor_card"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "wcwt:toolkit_card"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "ae2:wireless_access_point"
+									}
+									{
+										"#": 1L
+										"#c": "ae2:i"
+										id: "evolvedmekanism:dense_energy_cube"
+										tag: {
+											mekData: {
+												EnergyContainers: [{
+													Container: 0b
+													stored: "16384000000"
+												}]
+											}
+										}
+									}
+								]
+								types: 18
+							}
+							internalCurrentPower: 160000.0d
+						}
+					}
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "0C0F8DFBF435D98E"
+				item: "integrateddynamics:menril_log"
+				type: "item"
+			}]
+			title: "イージーモード"
+			x: -3.0d
+			y: -5.0d
+		}
+	]
+	title: "{ftbquests.chapter.628F7C3A3B42F51A.title}"
+}

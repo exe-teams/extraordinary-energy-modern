@@ -1,0 +1,3 @@
+// Compost colors for meinfinitycell. You may add your own colors, change existing ones, or remove colors that aren't needed.
+infinity_cobblestone_cell, #ff6fff
+infinity_water_cell, #ff6eff

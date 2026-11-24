@@ -9,6 +9,7 @@ StartupEvents.registry("mekanism:slurry", event => {
         ["uranium", 0xf0f8ff],
         ["iridium", 0xf0f8ff],
         ["debri", 0x754317],
+        ["naquadah", 0x22242A],
     ]
 
     let slurry_gem = [
@@ -59,7 +60,7 @@ StartupEvents.registry("mekanism:slurry", event => {
     let types = [ // ["name",0x color]
         ["iron", 0xfafafa], ["copper", 0xdea924], ["gold", 0xffdedb], ["osmium", 0x63cedb], ["tin", 0xddddea], ["lead", 0x63a2a4], ["uranium", 0x9cff9c], ["iridium", 0xf3ff80],
         ["redstone", 0xff2020], ["quartz", 0xffc0b1], ["certus_quartz", 0xb1c0ff], ["fluorite", 0xffb0ff],
-        ["coal", 0x444444], ["lapis", 0x4444ff], ["diamond", 0x33b1ff], ["emerald", 0x33ff61], ["debri", 0xa34f05]]
+        ["coal", 0x444444], ["lapis", 0x4444ff], ["diamond", 0x33b1ff], ["emerald", 0x33ff61], ["debri", 0xa34f05],["naquadah",0x22242A]]
     types.forEach(type => {
         event.create(`mek1000:prec_${type[0]}`).texture("mekanism:slurry/clean").color(type[1]).displayName(`precipitated ${type[0]}`)
         event.create(`mek1000:prec_compress_${type[0]}`).texture("mekanism:slurry/clean").color(type[1]).displayName(`precipitated compress ${type[0]}`)

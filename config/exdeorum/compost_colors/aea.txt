@@ -1,0 +1,4 @@
+// Compost colors for aea. You may add your own colors, change existing ones, or remove colors that aren't needed.
+advanced_wireless_connection_tool, #ffffff
+mirror_connection_tool, #ffffff
+wireless_connection_tool, #ffffff

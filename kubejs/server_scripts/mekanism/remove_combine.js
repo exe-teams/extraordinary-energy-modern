@@ -13,7 +13,7 @@ ServerEvents.recipes(event => {
         "minecraft:coal_ore", "minecraft:deepslate_emerald_ore","minecraft:emerald_ore",
         "minecraft:diamond_ore", "minecraft:deepslate_diamond_ore",
         "minecraft:copper_ore", "minecraft:deepslate_copper_ore",
-        "minecraft:ancient_debris"
+        "minecraft:ancient_debris",'mekanism_extras:end_naquadah_ore'
     ]
     ore.forEach(block => { event.remove({ output: block }) })
 })

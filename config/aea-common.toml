@@ -1,0 +1,13 @@
+
+[mixin]
+	#Enable Mixins for FTB Ultimine
+	FTB_ULTIMINE = true
+	#Enable Mixins for Building Gadgets 2
+	BUILDING_GADGETS2 = true
+	#Enable Mixins for AE2 Crafting Blocked status
+	AE_CRAFTING_BLOCKED = true
+	#Enable Mixins for AE2 Pattern processing times
+	AE_CRAFTING_PATTERN_TIMES = true
+	#Enable Mixins for AE2 Crafting Color logic
+	AE_CRAFTING_COLOR = true
+

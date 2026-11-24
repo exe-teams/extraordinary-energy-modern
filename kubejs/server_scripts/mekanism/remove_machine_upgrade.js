@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     })
 
     var allevlist = ['alloying']
-    var allmmlist = ['planting', 'recycling', 'stamping', 'lathing', 'rolling_mill', 'replicating']
+    var allmmlist = ['planting', 'recycling', 'stamping', 'lathing', 'rolling_mill', 'replicating', 'pigment_extracting']
     var mmlist = ['planting', 'recycling', 'stamping']
 
     allmmlist.forEach((id) => {
@@ -29,6 +29,11 @@ ServerEvents.recipes(event => {
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/dense/${id}` }),
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/multiversal/${id}` }),
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/creative/${id}` })
+
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/absolute/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/supreme/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/cosmic/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/infinite/${id}` })
     })
 
     allevlist.forEach((id) => {
@@ -66,17 +71,30 @@ ServerEvents.recipes(event => {
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/dense/${id}` }),
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/multiversal/${id}` }),
             event.remove({ id: `mekmm:compat/evolvedmekanism/factory/creative/${id}` })
+
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/absolute/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/supreme/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/cosmic/${id}` })
+            event.remove({ id: `mekanism_extras:compat/mekmm/factory/infinite/${id}` })
     })
 
     advMachineList.concat(mmlist).forEach((id) => {
         if (id == 'planting' || id == "centrifuging") {
             let mktier = ["basic", "advanced", "elite", "ultimate"]
+            let extier = ["absolute", "supreme", "cosmic", "infinite"]
 
             mktier.forEach((tier, index, array) => {
                 if (tier != "basic") event.recipes.minecraft.crafting_shapeless(`mekmm:${tier}_${id}_factory`, [`mekmm:${array[index - 1]}_${id}_factory`, `mekanism:${tier}_tier_installer`])
             })
+
+            extier.forEach((tier2, index, array) => {
+                if (tier2 != "absolute") event.shapeless(`mekanism_extras:${tier2}_${id}_factory`, [`mekanism_extras:${array[index - 1]}_${id}_factory`, `mekanism_extras:${tier2}_tier_installer`])
+            })
         }
     })
+
+    event.shapeless('mekanism_extras:absolute_centrifuging_factory',['mekmm:ultimate_centrifuging_factory','mekanism_extras:absolute_tier_installer'])
+    event.shapeless('mekanism_extras:absolute_planting_factory',['mekmm:ultimate_planting_factory','mekanism_extras:absolute_tier_installer'])
 
     machineUpgradeMap.forEach((value, key) => {
         event.recipes.minecraft.crafting_shapeless(`mekmm:basic_${key}_factory`, [value, `mekanism:basic_tier_installer`])

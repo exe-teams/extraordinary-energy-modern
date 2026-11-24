@@ -57,6 +57,11 @@ ServerEvents.tags("item",(event) => {
     event.add('mekanism:clumps/emerald', 'astral_mekanism:compressed_emerald_ore')
     event.add('mekanism:shards/emerald', 'astral_mekanism:sparkling_emerald_ore')
     event.add('mekanism:crystals/emerald', 'astral_mekanism:enriched_emerald_ore')
+
+    event.add('mekanism:dirty_dusts/naquadah','mekanism_extras:dirty_dust_naquadah')
+    event.add('mekanism:clumps/naquadah','mekanism_extras:clump_naquadah')
+    event.add('mekanism:shards/naquadah','mekanism_extras:shard_naquadah')
+    event.add('mekanism:crystals/naquadah','mekanism_extras:crystal_naquadah')
 })
 
 ServerEvents.tags("fluid",(event)=>{

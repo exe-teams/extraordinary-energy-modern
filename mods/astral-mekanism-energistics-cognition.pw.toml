@@ -1,13 +1,13 @@
 name = "Astral Mekanism & Energistics:Cognition"
-filename = "ame_cognition-1.0.0.jar"
+filename = "ame_cognition-1.0.1.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "5813aeff80d763b3de52df49d0dd475d1fb76b12"
+hash = "875ef762f2f512e6bbbc30beefb3a426705e7662"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 8081639
+file-id = 8131136
 project-id = 1541874

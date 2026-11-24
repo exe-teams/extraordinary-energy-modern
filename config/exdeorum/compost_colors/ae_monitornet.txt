@@ -1,0 +1,2 @@
+// Compost colors for ae_monitornet. You may add your own colors, change existing ones, or remove colors that aren't needed.
+throughput_monitor_configurator, #8c57c5

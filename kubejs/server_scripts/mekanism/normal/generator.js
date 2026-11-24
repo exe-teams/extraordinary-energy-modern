@@ -200,4 +200,8 @@ ServerEvents.recipes(event => {
         B: 'mekanism_extras:naquadah_reactor_casing',
         C: 'mekanism_extras:infinite_control_circuit'
     })
+
+    //large gas burning generator
+    event.remove({output:'mekmm:large_gas_burning_generator'})
+    event.shapeless('mekmm:large_gas_burning_generator', ['4x mekanismgenerators:gas_burning_generator', 'mekanism:advanced_control_circuit'])
 })

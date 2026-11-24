@@ -72,6 +72,307 @@
 			x: -3.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["7F4B21A42724338C"]
+			hide_dependency_lines: true
+			hide_until_deps_complete: true
+			id: "04D89876E2AEB9F0"
+			optional: true
+			rewards: [
+				{
+					id: "3507673CA812A973"
+					item: {
+						Count: 1
+						id: "minecraft:shulker_box"
+						tag: {
+							BlockEntityTag: {
+								ForgeCaps: { }
+								Items: [
+									{
+										BigCount: 65536
+										Count: 127b
+										Slot: 0b
+										id: "ae2:blank_pattern"
+									}
+									{
+										Count: 1b
+										Slot: 1b
+										id: "astral_mekanism:engineering_energy_cell"
+									}
+									{
+										Count: 1b
+										Slot: 2b
+										id: "ae2:crafting_terminal"
+									}
+									{
+										Count: 1b
+										Slot: 3b
+										id: "expatternprovider:ex_drive"
+									}
+									{
+										Count: 1b
+										Slot: 4b
+										id: "evolvedmekanism:dense_energy_cube"
+										tag: {
+											mekData: {
+												EnergyContainers: [{
+													Container: 0b
+													stored: "16384000000"
+												}]
+											}
+										}
+									}
+									{
+										Count: 1b
+										Slot: 5b
+										id: "insaneae:elite_solar_panel"
+									}
+									{
+										Count: 4b
+										Slot: 6b
+										id: "ae2omnicells:quantum_crafting_storage_256k_block"
+									}
+									{
+										Count: 1b
+										Slot: 7b
+										id: "wcwt:toolkit_card"
+									}
+									{
+										Count: 1b
+										Slot: 8b
+										id: "wcwt:tool_slots_box_card"
+									}
+									{
+										Count: 1b
+										Slot: 9b
+										id: "wcwt:curios_card"
+									}
+									{
+										Count: 1b
+										Slot: 10b
+										id: "wcwt:cosmetic_armor_card"
+									}
+									{
+										Count: 1b
+										Slot: 11b
+										id: "wcwt:advanced_coding_card"
+									}
+									{
+										Count: 32b
+										Slot: 12b
+										id: "insaneae:insane_pattern_provider"
+									}
+									{
+										Count: 32b
+										Slot: 13b
+										id: "insaneae:insane_interface"
+									}
+									{
+										Count: 1b
+										Slot: 14b
+										id: "insaneae:quantum_cpu"
+									}
+									{
+										BigCount: 65536
+										Count: 127b
+										Slot: 15b
+										id: "ae2:fluix_smart_cable"
+									}
+									{
+										Count: 1b
+										Slot: 16b
+										id: "ae2:wireless_access_point"
+									}
+									{
+										Count: 1b
+										Slot: 17b
+										id: "ae2:energy_acceptor"
+									}
+									{
+										Count: 1b
+										Slot: 18b
+										id: "extendedae_plus:infinity_biginteger_cell"
+									}
+									{
+										Count: 1b
+										Slot: 19b
+										id: "mek1000:rainbow_concrete_drive"
+									}
+									{
+										Count: 1b
+										Slot: 20b
+										id: "mek1000:chisel_building_block_drive"
+									}
+									{
+										Count: 1b
+										Slot: 21b
+										id: "ae2:charger"
+									}
+								]
+								id: "minecraft:shulker_box"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42FD573AFD3D9543"
+					item: {
+						Count: 1
+						id: "minecraft:orange_shulker_box"
+						tag: {
+							BlockEntityTag: {
+								ForgeCaps: { }
+								Items: [
+									{
+										Count: 1b
+										Slot: 0b
+										id: "execore:airborne_mining_charm"
+									}
+									{
+										Count: 1b
+										Slot: 1b
+										id: "execore:speed_charm_3"
+									}
+									{
+										Count: 1b
+										Slot: 2b
+										id: "execore:speed_charm_1"
+									}
+									{
+										Count: 1b
+										Slot: 3b
+										id: "evolvedmekanism:plaslitherite_paxel"
+										tag: {
+											Damage: 0
+											Enchantments: [
+												{
+													id: "minecraft:efficiency"
+													lvl: 5s
+												}
+												{
+													id: "minecraft:silk_touch"
+													lvl: 1s
+												}
+											]
+											Unbreakable: 1b
+											damage: 0.0d
+										}
+									}
+									{
+										Count: 1b
+										Slot: 4b
+										id: "evolvedmekanism:plaslitherite_paxel"
+										tag: {
+											Damage: 0
+											Enchantments: [{
+												id: "minecraft:efficiency"
+												lvl: 5s
+											}]
+											Unbreakable: 1b
+											damage: 0.0d
+										}
+									}
+									{
+										Count: 1b
+										Slot: 5b
+										id: "ae2wtlib:quantum_bridge_card"
+									}
+									{
+										Count: 1b
+										Slot: 6b
+										id: "ae2:quantum_link"
+									}
+									{
+										Count: 8b
+										Slot: 7b
+										id: "ae2:quantum_ring"
+									}
+									{
+										Count: 1b
+										Slot: 8b
+										id: "ae2:tiny_tnt"
+									}
+									{
+										Count: 1b
+										Slot: 9b
+										id: "ae2:ender_dust"
+									}
+									{
+										Count: 1b
+										Slot: 10b
+										id: "ae2:singularity"
+									}
+									{
+										Count: 1b
+										Slot: 11b
+										id: "wcwt:wireless_comprehensive_work_terminal"
+										tag: {
+											wcwt: {
+												insert_config: { }
+												pattern_encoding_logic: { }
+												pickup_config: { }
+											}
+										}
+									}
+									{
+										Count: 1b
+										Slot: 12b
+										id: "ae_monitornet:wireless_throughput_terminal"
+									}
+									{
+										Count: 1b
+										Slot: 13b
+										id: "ae2wtlib:magnet_card"
+									}
+									{
+										Count: 2b
+										Slot: 14b
+										id: "execore:wireless_power_card"
+									}
+									{
+										Count: 1b
+										Slot: 15b
+										id: "constructionwand:infinity_wand"
+										tag: {
+											wand_options: { }
+										}
+									}
+									{
+										Count: 1b
+										Slot: 16b
+										id: "lightingwand:wand"
+										tag: {
+											Damage: 0
+											Unbreakable: 1b
+											damage: 0.0d
+										}
+									}
+									{
+										Count: 1b
+										Slot: 17b
+										id: "constructionwand:core_angel"
+									}
+								]
+								id: "minecraft:shulker_box"
+							}
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
+			tasks: [{
+				consume_items: true
+				count: 64L
+				id: "0C0F8DFBF435D98E"
+				item: "integrateddynamics:menril_log"
+				type: "item"
+			}]
+			title: "イージーモード"
+			x: -3.0d
+			y: -5.0d
+		}
 	]
 	title: "{ftbquests.chapter.628F7C3A3B42F51A.title}"
 }

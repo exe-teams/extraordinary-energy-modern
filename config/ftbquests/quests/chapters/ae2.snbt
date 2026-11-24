@@ -637,7 +637,10 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["25D4C3E90302E4EC"]
+			dependencies: [
+				"25D4C3E90302E4EC"
+				"6D7A910C7242BA45"
+			]
 			description: [
 				"アイテム、液体、ガス、電力などをBigIntegerの最大まで保管出来ます。"
 				"実質無限の容量を持ちます。"
