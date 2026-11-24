@@ -6,7 +6,7 @@ ServerEvents.recipes((event) => {
     "justdirethings:gooblock_tier4",
     "justdirethings:paradoxmachine",
   ].forEach((output) => {
-    event.remove({ output });
+    event.remove({ output:output });
   });
 
   [

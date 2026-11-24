@@ -1,0 +1,37 @@
+
+[general]
+
+	[general.general]
+		#The base energy usage for the world chemical importer when it has a variable.
+		importerWorldChemicalBaseConsumptionEnabled = 32
+		#The base energy usage for the chemical exporter.
+		exporterChemicalBaseConsumption = 1
+		#The base energy usage for the world chemical exporter when it has a variable.
+		exporterWorldChemicalBaseConsumptionEnabled = 32
+		#The base energy usage for the world chemical importer when it does not have a variable.
+		importerWorldChemicalBaseConsumptionDisabled = 1
+		#The base energy usage for the world chemical exporter when it does not have a variable.
+		exporterWorldChemicalBaseConsumptionDisabled = 1
+		#The base energy usage for the chemical importer.
+		importerChemicalBaseConsumption = 1
+		#If radioactive chemicals can be transferred across the network.
+		transferRadioactiveChemicals = true
+		#The base energy usage for the chemical reader.
+		chemicalReaderBaseConsumption = 1
+		#The base energy usage for the chemical interface.
+		interfaceChemicalBaseConsumption = 0
+
+[core]
+
+	[core.general]
+		#The maximum network chemical transfer rate.
+		chemicalRateLimit = 9223372036854775807
+
+[machine]
+
+	[machine.general]
+		#The number that should be selected when clicking on a chemical in the storage terminal.
+		guiStorageChemicalInitialQuantity = 100000
+		#The number that should be removed when right-clicking when a chemical is selected in the storage terminal.
+		guiStorageChemicalIncrementalQuantity = 1000
+

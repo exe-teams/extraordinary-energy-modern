@@ -130,10 +130,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: [
-				"0A5CBA30DFD5CDE7"
-				"3F59FBB68176B429"
-			]
 			dependency_requirement: "one_completed"
 			description: [
 				"&aAstral Mekanism&rのコンパクトリアクターは稼働に熱が必要です。"

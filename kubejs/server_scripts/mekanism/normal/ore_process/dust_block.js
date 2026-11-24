@@ -17,6 +17,7 @@ let DustBlocks = [
   ["mek1000:block_dirty_dust_iridium", "kubejs:dirty_dust_iridium"],
   ["mek1000:block_dust_debri", "kubejs:dust_debri"],
   ["mek1000:block_dirty_dust_debri", "kubejs:dirty_dust_debri"],
+  ["mek1000:block_dirty_dust_naquadah", 'mekanism_extras:dust_naquadah'],
 ];
 
 let DustSmelting = [
@@ -29,6 +30,7 @@ let DustSmelting = [
   ["mek1000:block_dust_uranium", "mekanism:ingot_uranium"],
   ["mek1000:block_dust_iridium", "kubejs:iridium"],
   ["mek1000:block_dust_debri", "minecraft:netherite_scrap"],
+  ["mek1000:block_dust_naquadah", 'mekanism_extras:ingot_naquadah'],
 ];
 
 let RawBlockSmelting = [

@@ -246,4 +246,6 @@ ServerEvents.recipes(event => {
     })
 
     event.recipes.mekanism.combining('minecraft:honey_bottle','minecraft:glass_bottle','minecraft:honeycomb')
+
+    event.shapeless("minecraft:leather",['4x exdeorum:string_mesh'])
 })

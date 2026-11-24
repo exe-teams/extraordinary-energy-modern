@@ -1,0 +1,48 @@
+
+#通常量子コンピュータの性能設定 / Standard Quantum Computer tuning
+[quantum_computer]
+	#改造量子コアの基本ストレージ量（byte）
+	#Range: 1 ~ 35184372088831
+	core_storage_bytes = 268435456
+	#改造量子ストレージ1個の容量（byte）
+	#Range: 1 ~ 35184372088831
+	storage_block_bytes = 35184372088831
+	#改造量子コアの基本コプロセッサ数
+	#Range: 1 ~ 65536
+	core_coprocessors = 4096
+	#改造量子アクセラレータ1個の処理スレッド数
+	#Range: 1 ~ 4096
+	accelerator_threads = 512
+	#改造マルチスレッダーのコプロセッサ倍率
+	#Range: 1 ~ 64
+	multi_threader_multiplier = 8
+	#改造データエンタングラーのストレージ倍率
+	#Range: 1 ~ 64
+	data_entangler_multiplier = 8
+
+#終盤量子コアの性能設定 / Endgame Quantum Core tuning
+[endgame_cores]
+	#long型量子コアの容量（byte）
+	#Range: 1 ~ 9223372036854775806
+	long_core_storage_bytes = 9223372036854775806
+	#long型量子コアのコプロセッサ数
+	#Range: 1 ~ 2147483646
+	long_core_coprocessors = 2147483646
+	#BigInteger量子コア容量の桁数。容量は 10^digits - 1 byte
+	#構造全体の上限16384桁に対し、加算・Data Entangler用の12桁を予約
+	#Range: 20 ~ 16372
+	big_integer_storage_digits = 1024
+	#BigInteger量子コアのコプロセッサ数
+	#Range: 1 ~ 2147483646
+	big_integer_coprocessors = 2147483646
+
+#互換性検査と診断ログ / Safety and diagnostics
+[safety_and_diagnostics]
+	#Advanced AEの互換性不一致を検出した場合、起動を停止する
+	fail_fast_on_integration_mismatch = true
+	#極端な容量・コプロセッサ設定をログへ警告する
+	warn_on_extreme_values = true
+	#起動診断で計算に使う改造アクセラレータ数。ゲーム性能には影響しない
+	#Range: 0 ~ 512
+	diagnostic_accelerator_count = 121
+

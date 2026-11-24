@@ -12,6 +12,7 @@ ServerEvents.recipes(event => {
     processing_normal("iridium")
     processing_normal("debri")
     processing_normal("osmium")
+    processing_normal("naquadah")
 
 
 
@@ -80,6 +81,33 @@ ServerEvents.recipes(event => {
 
         event.remove({ id: `mekanism:processing/${material}/crystal/from_slurry` })
 
+        if (material === "naquadah") {
+            event.remove({ id: `mekanism_extras:processing/${material}/dust/from_dirty_dust` })
+            event.remove({ id: `mekanism_extras:processing/${material}/dust/from_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/dust/from_raw_block` })
+            event.remove({ id: `mekanism_extras:processing/${material}/dust/from_raw_ore` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/dirty_dust/from_clump` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/clump/from_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/clump/from_raw_block` })
+            event.remove({ id: `mekanism_extras:processing/${material}/clump/from_raw_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/clump/from_shard` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/shard/from_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/shard/from_raw_block` })
+            event.remove({ id: `mekanism_extras:processing/${material}/shard/from_raw_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/shard/from_crystal` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/slurry/clean` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/slurry/dirty/from_ore` })
+            event.remove({ id: `mekanism_extras:processing/${material}/slurry/dirty/from_raw_block` })
+            event.remove({ id: `mekanism_extras:processing/${material}/slurry/dirty/from_raw_ore` })
+
+            event.remove({ id: `mekanism_extras:processing/${material}/crystal/from_slurry` })
+        }
+
         let failcount = 0
 
         //素材タグ
@@ -88,7 +116,7 @@ ServerEvents.recipes(event => {
             dust: `forge:dusts/${material}`,
             dirty_dust: `mekanism:dirty_dusts/${material}`,
             clump: `mekanism:clumps/${material}`,
-            shard: `mekanism:shards/${material}`, 
+            shard: `mekanism:shards/${material}`,
             crystal: `mekanism:crystals/${material}`,
 
             compressed_clump: `mek1000:ores/compressed_clump/${material}`,
@@ -126,32 +154,52 @@ ServerEvents.recipes(event => {
             prec_compress: `mek1000:prec_compress_${material}`
         }
 
+
+
         //懸濁液のチェック
+
+        let slurry_dirty_check = [
+            `astral_mekanism:dirty_${material}`,
+            `kubejs:dirty_${material}`,
+            `mekanism_extras:dirty_${material}`
+        ]
+
         if (MekanismKeyHelper.slurry(slurry.dirty).get() === null) {
-            slurry.dirty = `astral_mekanism:dirty_${material}`
+
+            for (const item of slurry_dirty_check) {
+                slurry.dirty = item
+                if (!(MekanismKeyHelper.slurry(slurry.dirty).get() === null)) {
+                    break
+                }
+            }
 
             if (MekanismKeyHelper.slurry(slurry.dirty).get() === null) {
-                slurry.dirty = `kubejs:dirty_${material}`
-
-                if (MekanismKeyHelper.slurry(slurry.dirty).get() === null) {
-                    failcount++
-                    console.log(`[Mek1000] Not Found Dirty Slurry ${material}`)
-                }
+                failcount++
+                console.log(`[Mek1000] Not Found Dirty Slurry ${material}`)
             }
+
         }
 
+        let slurry_clean_check = [
+            `astral_mekanism:clean_${material}`,
+            `kubejs:clean_${material}`,
+            `mekanism_extras:clean_${material}`
+        ]
 
         if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
-            slurry.clean = `astral_mekanism:clean_${material}`
 
-            if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
-                slurry.clean = `kubejs:clean_${material}`
-
-                if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
-                    failcount++
-                    console.log(`[Mek1000] Not Found Clean Slurry ${material}`)
+            for (const item of slurry_clean_check) {
+                slurry.clean = item
+                if (!(MekanismKeyHelper.slurry(slurry.clean).get() === null)) {
+                    break
                 }
             }
+
+            if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
+                failcount++
+                console.log(`[Mek1000] Not Found Clean Slurry ${material}`)
+            }
+
         }
 
         if (MekanismKeyHelper.slurry(slurry.dirty_compressed).get() === null) {

@@ -1,13 +1,13 @@
 name = "Mekanism Config Card Upgrades"
-filename = "mekccupgrades-1.4.8-hotfix.jar"
+filename = "mekccupgrades-1.5.0.jar"
 side = "both"
 
 [download]
 hash-format = "sha1"
-hash = "d2b26fbbcc11990357709ac9b263b027b25b3f90"
+hash = "4773603411e6ae7dc65a98656f8ddc9eb856994a"
 mode = "metadata:curseforge"
 
 [update]
 [update.curseforge]
-file-id = 7971335
+file-id = 8093792
 project-id = 1516529

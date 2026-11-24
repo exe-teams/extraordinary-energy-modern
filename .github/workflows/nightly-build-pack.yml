@@ -8,10 +8,10 @@ jobs:
     runs-on: ubuntu-slim
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: short-sha
-        uses: benjlevesque/short-sha@v3.0
+        uses: benjlevesque/short-sha@v5.0
 
       - name: Inject nightly SHA into pack metadata
         run: |
@@ -20,7 +20,7 @@ jobs:
           sed -i 's|VERSION_PLACEHOLDER|nightly-${{ env.SHA }}|' kubejs/config/client.properties
 
       - name: Install Packwiz
-        uses: actionhippie/install-packwiz@v1
+        uses: actionhippie/install-packwiz@v2
 
       - name: Build Packs
         run: |
@@ -42,14 +42,14 @@ jobs:
           rm -rf ./build/server/overrides/LICENSE
 
       - name: Upload Client build result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: extraordinary_energy_modern-nightly-${{ env.SHA }}
           path: ./build/client/
           retention-days: 7
 
       - name: Upload Server build result
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: extraordinary_energy_modern-server-nightly-${{ env.SHA }}
           path: ./build/server/

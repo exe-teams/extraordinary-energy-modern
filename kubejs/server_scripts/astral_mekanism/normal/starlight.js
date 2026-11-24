@@ -14,10 +14,13 @@ ServerEvents.recipes(event => {
     'lead',
     'uranium',
     'osmium',
-    'amethyst'
+    'amethyst',
+    'naquadah'
   ]
 
   event.remove({ id: `astral_mekanism:processing_old/certus_quartz/starlight` })
+  event.remove({ id: `astral_mekanism:starlight/certus_quartz/starlight` })
+  event.remove({ id: `astral_mekanism:starlight/netherite/starlight` })
 
   starlights.forEach(value => {
     event.remove({ id: `astral_mekanism:starlight/${value}/starlight` })
@@ -72,7 +75,7 @@ ServerEvents.recipes(event => {
     },
     itemNotConsumed: false,
     itemOutput: {
-      item: 'mek1000:starlight_iridium' 
+      item: 'mek1000:starlight_iridium'
     }
   })
 
@@ -98,7 +101,60 @@ ServerEvents.recipes(event => {
     },
     itemNotConsumed: false,
     itemOutput: {
-      item: 'astral_mekanism:lapis_lazuli_starlight' 
+      item: 'astral_mekanism:lapis_lazuli_starlight'
     }
   })
+
+  event.custom({
+    type: 'astral_mekanism:reconstruction',
+    duration: 4000,
+    fluidInput: {
+      amount: 2000000000,
+      fluid: 'astral_mekanism:refined_astral_ether'
+    },
+    gasInput: {
+      amount: 50000000000000,
+      gas: `mek1000:vaporized_debri`
+    },
+    gasOutput: {
+      amount: 1,
+      gas: `mekanism_animation_injector:operation_gas`
+    },
+    itemInput: {
+      ingredient: {
+        item: 'astral_mekanism:sparkling_nova'
+      }
+    },
+    itemNotConsumed: false,
+    itemOutput: {
+      item: 'astral_mekanism:netherite_starlight'
+    }
+  })
+
+  event.custom({
+    type: 'astral_mekanism:reconstruction',
+    duration: 4000,
+    fluidInput: {
+      amount: 2000000000,
+      fluid: 'astral_mekanism:refined_astral_ether'
+    },
+    gasInput: {
+      amount: 50000000000000,
+      gas: `mek1000:vaporized_certus`
+    },
+    gasOutput: {
+      amount: 1,
+      gas: `mekanism_animation_injector:operation_gas`
+    },
+    itemInput: {
+      ingredient: {
+        item: 'astral_mekanism:sparkling_nova'
+      }
+    },
+    itemNotConsumed: false,
+    itemOutput: {
+      item: 'astral_mekanism:certus_quartz_starlight'
+    }
+  })
+
 })

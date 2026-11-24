@@ -52,24 +52,24 @@
 			y: -13.5d
 		}
 		{
-			id: "4B345B2EEB29EF0D"
-			linked_quest: "64310B544BDC74D0"
-			x: 0.0d
-			y: 11.0d
-		}
-		{
-			id: "3042DA1AD98E38B8"
-			linked_quest: "7ED68F17797155BB"
-			x: 1.5d
-			y: 11.0d
-		}
-		{
-			id: "48B83EE5943E6C4C"
-			linked_quest: "55BC5FEC8F4AE878"
+			id: "600AB676F65507F8"
+			linked_quest: "5AF53849FAD16922"
 			shape: "hexagon"
-			size: 3.0d
-			x: 1.5d
-			y: 15.0d
+			size: 2.0d
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			id: "6AEFD1660E3E9FD9"
+			linked_quest: "7494EB64A13706C6"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			id: "1D304B0DA1A0AEBF"
+			linked_quest: "0DCCE6060D187302"
+			x: 4.0d
+			y: 9.5d
 		}
 	]
 	quests: [
@@ -95,17 +95,32 @@
 			hide_dependency_lines: true
 			hide_until_deps_complete: true
 			id: "016780D32B1ABC49"
-			rewards: [{
-				id: "6AF50FC499C0E0C3"
-				item: {
-					Count: 1
-					id: "mekanismtools:refined_obsidian_paxel"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "6AF50FC499C0E0C3"
+					item: {
+						Count: 1
+						id: "mekanismtools:refined_obsidian_paxel"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "47A605DC17E9170A"
+					ignore_reward_blocking: true
+					item: {
+						Count: 1
+						id: "guideme:guide"
+						tag: {
+							guideId: "mek1000:guide"
+						}
+					}
+					team_reward: false
+					type: "item"
+				}
+			]
 			subtitle: "1.20アップデート"
 			tasks: [{
 				id: "3604615BBDCBBC95"
@@ -118,12 +133,10 @@
 		{
 			dependencies: ["016780D32B1ABC49"]
 			description: [
-				"このModpackには&aFTB Ultimine&rが入っています"
-				"キー設定をして使いましょう。"
+				"このModpackにはFTB Ultimineが入っています"
+				"キー設定をして使いましょう"
 				""
-				"言い忘れていましたが、&a全てのアイテムのスタック数は65536個&rまで拡張されています！"
-				""
-				"また、このModpackでは鉱石が&a木レベルのツール&rで掘れるようになっています。"
+				"また、このModpackでは鉱石が木レベルのツールで掘れるようになっています"
 			]
 			id: "296399230B63F479"
 			rewards: [
@@ -268,7 +281,7 @@
 				}
 			]
 			title: "バックパックを作る"
-			x: -3.0d
+			x: -1.5d
 			y: -12.0d
 		}
 		{
@@ -294,16 +307,12 @@
 				}
 			]
 			title: "バックパックの強化"
-			x: -5.0d
+			x: -3.0d
 			y: -12.0d
 		}
 		{
 			dependencies: ["296399230B63F479"]
-			description: [
-				"最初の機械である&a冶金吹き込み機&rを稼働させるには256台の風力発電機が必要です。"
-				""
-				"ヒント：風力発電機は&a高度に比例して発電量が増加&rします"
-			]
+			description: ["最初の機械である&a冶金吹き込み機&rを稼働させるには256台の風力発電機が必要です"]
 			id: "3F9B706BE86D157B"
 			rewards: [{
 				count: 256
@@ -355,15 +364,11 @@
 			}]
 			title: "冶金吹込み機を作る"
 			x: 0.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
-			description: [
-				"&a神秘的なキューブ&rを破壊することで金型を入手できます"
-				""
-				"[ \"スカイストーンの入手法には冶金注入機で作るか、\", { \"text\": \"無限資源にする方法があります。\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"00C56BD3BE44EAC7\" } } ]"
-			]
+			description: ["&a神秘的なキューブ&rを破壊することで金型を入手できます"]
 			id: "2222120D1B1E679D"
 			rewards: [{
 				count: 32
@@ -377,7 +382,7 @@
 				item: "ae2:mysterious_cube"
 				type: "item"
 			}]
-			title: "ケルタスクオーツと神秘的なキューブを作る"
+			title: "神秘的なキューブを作る"
 			x: -3.0d
 			y: -6.5d
 		}
@@ -473,7 +478,7 @@
 			}]
 			title: "基本制御回路を作る"
 			x: -3.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
@@ -529,7 +534,7 @@
 			]
 			title: "濃縮室と粉砕機を作る"
 			x: 0.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0EE8A78C4EFA5BB8"]
@@ -548,7 +553,7 @@
 			}]
 			title: "発展制御回路を作る"
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
@@ -559,8 +564,8 @@
 				type: "item"
 			}]
 			title: "加圧反応室を作る"
-			x: 1.5d
-			y: 1.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["18EF09B75E5B4CFC"]
@@ -579,7 +584,7 @@
 			}]
 			title: "精鋭制御回路を作る"
 			x: 0.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
@@ -592,7 +597,7 @@
 			}]
 			title: "浄化室を作る"
 			x: 0.0d
-			y: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["38F0D9673E24BE74"]
@@ -605,7 +610,7 @@
 			}]
 			title: "化学注入室を作る"
 			x: 0.0d
-			y: 7.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["61D9BE79FEB34259"]
@@ -622,7 +627,7 @@
 			}]
 			title: "究極制御回路を作る"
 			x: 0.0d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["503CF531934055CD"]
@@ -667,11 +672,7 @@
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
-			description: [
-				"ExDeorumが追加されていますが、&cふるいや溶岩るつぼは作成できません&r"
-				""
-				"Skyblockモードでは作成可能です。詳しくはSkyblockの章をご覧ください。"
-			]
+			description: ["&aExDeorum&rが導入されていますが、ハンマー以外のレシピは削除されています"]
 			id: "4E84A725FB985753"
 			rewards: [{
 				id: "02070DC4220BF12A"
@@ -760,7 +761,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -846,7 +847,7 @@
 				}
 			]
 			x: -5.0d
-			y: -10.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["7F5BC9CABAE2CB00"]
@@ -875,8 +876,8 @@
 				item: "mek1000:pdt"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 11.0d
+			x: 2.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -953,7 +954,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -973,7 +974,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -993,7 +994,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1250AB64CE893AC7"]
@@ -1010,7 +1011,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -1031,6 +1032,26 @@
 			title: "リソースパックについて"
 			x: -1.5d
 			y: -12.0d
+		}
+		{
+			dependencies: ["32BA30BD4C4537A0"]
+			id: "0D1B57DC6CAEBC79"
+			tasks: [
+				{
+					id: "59F2784E53B87C2F"
+					item: "minecraft:milk_bucket"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "6734819293E470D8"
+					item: "minecraft:white_dye"
+					type: "item"
+				}
+			]
+			title: "偽造牛乳"
+			x: -5.0d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.1.subtitle0}"]

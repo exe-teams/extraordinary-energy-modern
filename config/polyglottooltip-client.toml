@@ -1,0 +1,15 @@
+#List of extra language codes to show in item tooltips (e.g. ["en_us", "zh_cn"]).
+#Each language adds one extra name line to the tooltip.
+displayLanguage = ["en_us"]
+#If true, show the extra language even when it matches the current game language.
+alwaysShow = false
+#If true, search treats simplified and traditional Chinese as interchangeable.
+#Disabling this turns off PolyglotTooltip's script-variant expansion for JEI, AE2, RS, and related integrations.
+enableChineseScriptMatching = true
+#Legacy format codes applied to secondary-language names shown in normal tooltips.
+#Examples: "&7", "&7&l", "&e&o". Use an empty string for no extra formatting.
+tooltipSecondaryNameFormat = "&7"
+#Legacy format codes applied to secondary-language names shown in Jade tooltips.
+#Examples: "&7", "&7&l", "&e&o". Use an empty string for no extra formatting.
+jadeSecondaryNameFormat = "&7"
+

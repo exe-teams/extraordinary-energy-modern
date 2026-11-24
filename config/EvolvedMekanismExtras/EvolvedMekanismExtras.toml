@@ -1,0 +1,99 @@
+
+#Config
+[emextras]
+
+	#Universal Cables
+	[emextras."universal cables"]
+		#Internal buffer in Joules of each 'TIER' universal cable.(long)
+		absoluteOverclockedUniversalCable = "262144000"
+		#Internal buffer in Joules of each 'TIER' universal cable.(long)
+		supremeQuantumUniversalCable = "2097152000"
+		#Internal buffer in Joules of each 'TIER' universal cable.(long)
+		cosmicDenseUniversalCable = "16777216000"
+		#Internal buffer in Joules of each 'TIER' universal cable.(long)
+		infiniteMultiversalUniversalCable = "134217728000"
+
+	#Mechanical Pipes
+	[emextras."mechanical pipes"]
+		#Pump rate of 'TIER' mechanical pipes in mB/t.(int)
+		absoluteOverclockedMechanicalPipePullAmount = "1024000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.(int)
+		supremeQuantumMechanicalPipePullAmount = "8192000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.(int)
+		cosmicDenseMechanicalPipePullAmount = "65536000"
+		#Pump rate of 'TIER' mechanical pipes in mB/t.(int)
+		infiniteMultiversalMechanicalPipePullAmount = "524288000"
+		#Capacity of 'TIER' mechanical pipes in mB.(long)
+		absoluteOverclockedMechanicalPipeCapacity = "4096000"
+		#Capacity of 'TIER' mechanical pipes in mB.(long)
+		supremeQuantumMechanicalPipeCapacity = "32768000"
+		#Capacity of 'TIER' mechanical pipes in mB.(long)
+		cosmicDenseMechanicalPipeCapacity = "262144000"
+		#Capacity of 'TIER' mechanical pipes in mB.(long)
+		infiniteMultiversalMechanicalPipeCapacity = "2097152000"
+
+	#Thermodynamic Conductors
+	[emextras."thermodynamic conductors"]
+		#Conduction value of 'TIER' thermodynamic conductors.(long)
+		absoluteOverclockedThermodynamicConductorConduction = "15"
+		#Conduction value of 'TIER' thermodynamic conductors.(long)
+		supremeQuantumThermodynamicConductorConduction = "20"
+		#Conduction value of 'TIER' thermodynamic conductors.(long)
+		cosmicDenseThermodynamicConductorConduction = "25"
+		#Conduction value of 'TIER' thermodynamic conductors.(long)
+		infiniteMultiversalThermodynamicConductorConduction = "30"
+		#Heat capacity of 'TIER' thermodynamic conductors.(long)
+		absoluteOverclockedThermodynamicConductornCapacity = "1"
+		#Heat capacity of 'TIER' thermodynamic conductors.(long)
+		supremeQuantumThermodynamicConductornCapacity = "1"
+		#Heat capacity of 'TIER' thermodynamic conductors.(long)
+		cosmicDenseThermodynamicConductornCapacity = "1"
+		#Heat capacity of 'TIER' thermodynamic conductors.(long)
+		infiniteMultiversalThermodynamicConductornCapacity = "1"
+		#Insulation value of 'TIER' thermodynamic conductor(long).
+		absoluteOverclockedThermodynamicConductornInsulation = "600000"
+		#Insulation value of 'TIER' thermodynamic conductor(long).
+		supremeQuantumThermodynamicConductornInsulation = "900000"
+		#Insulation value of 'TIER' thermodynamic conductor(long).
+		cosmicDenseThermodynamicConductornInsulation = "2000000"
+		#Insulation value of 'TIER' thermodynamic conductor(long).
+		infiniteMultiversalThermodynamicConductornInsulation = "8000000"
+
+	#Logistical Transporters
+	[emextras."logistical transporters"]
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.(int)
+		absoluteOverclockedLogisticalTransporterSpeed = "60"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.(int)
+		supremeQuantumLogisticalTransporterSpeed = "65"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.(int)
+		cosmicDenseLogisticalTransporterSpeed = "85"
+		#Five times the travel speed in m/s of 'TIER' logistical transporter.(int)
+		infiniteMultiversalLogisticalTransporterSpeed = "125"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.(int)
+		absoluteOverclockedLogisticalTransporterPullAmount = "192"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.(int)
+		supremeQuantumLogisticalTransporterPullAmount = "384"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.(int)
+		cosmicDenseLogisticalTransporterPullAmount = "768"
+		#Item throughput rate of 'TIER' logistical transporters in items/half second.(int)
+		infiniteMultiversalLogisticalTransporterPullAmount = "1536"
+
+	#Pressurized Tubes
+	[emextras."pressurized tubes"]
+		#Pump rate of 'TIER' pressurized tubes in mB/t.(long)
+		absoluteOverclockedPressurizedTubePullAmount = "8192000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.(long)
+		supremeQuantumPressurizedTubePullAmount = "65536000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.(long)
+		cosmicDensePressurizedTubePullAmount = "524288000"
+		#Pump rate of 'TIER' pressurized tubes in mB/t.(long)
+		infiniteMultiversalPressurizedTubePullAmount = "4194304000"
+		#Capacity of 'TIER' pressurized tubes in mB.(long)
+		absoluteOverclockedPressurizedTubeCapacity = "32768000"
+		#Capacity of 'TIER' pressurized tubes in mB.(long)
+		supremeQuantumPressurizedTubeCapacity = "262144000"
+		#Capacity of 'TIER' pressurized tubes in mB.(long)
+		cosmicDensePressurizedTubeCapacity = "2097152000"
+		#Capacity of 'TIER' pressurized tubes in mB.(long)
+		infiniteMultiversalPressurizedTubeCapacity = "16777216000"
+

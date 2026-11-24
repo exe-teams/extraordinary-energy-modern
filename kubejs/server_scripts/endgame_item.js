@@ -32,66 +32,6 @@ ServerEvents.recipes(event => {
     })
     .id("mek1000:solar_grade_silicon");
 
-
-    event.custom({
-        "type": "hyperdaimc:shaped_desk",
-        "key": {
-            "C": {
-                "item": 'mek1000:infinity_chemical_component'
-            },
-            "F": {
-                "item": 'mek1000:infinity_fluid_component'
-            },
-            "I": {
-                "item": 'mek1000:infinity_item_component'
-            },
-            "N": {
-                "item": 'functionalstorage:netherite_upgrade'
-            },
-            "B": {
-                "item": 'extendedae_plus:infinity_core'
-            },
-            "1": {
-                "item": 'expandedstorage:netherite_chest'
-            },
-            "0": {
-                "item": 'evolvedmekanism:multiversal_personal_chest'
-            },
-            "L": {
-                "item": 'astral_mekanism:illusion_control_circuit'
-            },
-            "Q": {
-                "item": 'evolvedmekanism:qio_drive_black_hole'
-            },
-            "5": {
-                "item": 'functionalstorage:armory_cabinet'
-            },
-            "6": {
-                "item": 'functionalstorage:simple_compacting_drawer'
-            },
-            "7": {
-                "item": 'functionalstorage:storage_controller'
-            },
-            "8": {
-                "item": 'functionalstorage:compacting_drawer'
-            },
-        },
-        "pattern": [
-            "CFINNNIFC",
-            "FIBBBBBIF",
-            "IB11011BI",
-            "NB1L5L1BN",
-            "NB06Q80BN",
-            "NB1L7L1BN",
-            "IB11011BI",
-            "FIBBBBBIF",
-            "CFINNNIFC"
-        ],
-        "result": {
-            "item": 'functionalstorage:max_storage_upgrade'
-        }
-    })
-
     event.shaped(
         Item.of('mek1000:pdt', 1),
         [
@@ -107,29 +47,4 @@ ServerEvents.recipes(event => {
 
         }
     )
-
-    const itemIngredient = (item) => ({ ingredient: { item } })
-
-    const amountIngredient = (item, amount) => ({
-        amount,
-        ingredient: { item }
-    })
-
-    event.custom({
-        type: "mekanism:nucleosynthesizing",
-        itemInput: itemIngredient('mek1000:bablo_crystal'),
-        gasInput: { amount: 1000, gas: "mekanism:antimatter" },
-        output: { item: 'justdirethings:time_crystal' },
-        duration: 10000
-    })
-
-    event.custom({
-        type: "evolvedmekanism:alloying",
-        extraInput: amountIngredient('mek1000:bablo_crystal', 64),
-        secondExtraInput: amountIngredient('mek1000:valinium_processor', 4),
-        mainInput: amountIngredient('astral_mekanism:resonance_control_circuit', 1),
-        output: {
-            item: 'mek1000:double_string_control_circuit'
-        }
-    })
 })

@@ -16,6 +16,7 @@ StartupEvents.registry("item", (event) => {
     ["uranium", 0x9cff9c, Text.translate("mek1000.material.uranium")],
     ["iridium", 0xf3ff80, Text.translate("mek1000.material.iridium")],
     ["debri", 0xa34f05, Text.translate("mek1000.material.debri")],
+    ["naquadah", 0x22242A, Text.translate("mek1000.material.naquadah")],
   ];
 
   types.forEach((type) => {

@@ -6,8 +6,10 @@ ServerEvents.recipes(event => {
   smelting('tin', true,'forge:ingots/tin')
   smelting('uranium', true,'forge:ingots/uranium')
   smelting('iridium', true,'forge:gems/iridium')
-  smelting('debri', false,'ironfurnaces:netherite_upgrade_crafting')
+  smelting('debri', true,'ironfurnaces:netherite_upgrade_crafting')
   smelting('osmium', true,'forge:ingots/osmium')
+  smelting('naquadah', true,'forge:ingots/naquadah')
+
 
   function smelting (material, vaporize, tagname) {
     var tag_material = {

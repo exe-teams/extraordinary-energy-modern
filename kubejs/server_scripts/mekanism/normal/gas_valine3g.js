@@ -18,6 +18,15 @@ ServerEvents.recipes(event => {
     })
 
     event.custom({
+        "type": "mekanism:reaction",
+        "itemInput": { amount: 4, "ingredient": {"item": 'astral_mekanism:illusion_control_circuit' } },
+        "fluidInput": { "amount": 50000, "fluid": "astral_mekanism:mixed_lava" },
+        "gasInput": { "amount": 500000, "gas": "astral_mekanism:astral_ether" },
+        "energyRequired": 1000, "duration": 1000,
+        "gasOutput": { "gas": "mekanism_the_valine:the_incomparable_valine", "amount": 1 }
+    })
+
+    event.custom({
         "type": "mekanism:painting",
         "itemInput": {
             "ingredient": { "item": 'mekanism:dust_uranium' },
@@ -29,5 +38,4 @@ ServerEvents.recipes(event => {
         },
         "output": 'mekanism_extras:dust_naquadah'
     })
-
 })

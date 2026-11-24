@@ -1,0 +1,13 @@
+name = "AE2 Crafting Optimizer"
+filename = "aco1.5.33_1.20.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b57d2de2a35dc53726b520eca1f71b28296c89de"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8781957
+project-id = 1611589

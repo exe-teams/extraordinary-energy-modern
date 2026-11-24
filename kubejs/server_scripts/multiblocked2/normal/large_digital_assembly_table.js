@@ -372,7 +372,7 @@ ServerEvents.recipes((event) => {
   event.recipes.mek1000
     .large_digital_assemble()
     .id("mek1000:recipe_singularity")
-    .duration(10000)
+    .duration(100)
     .outputItems("mek1000:eternal_singularity")
     .perTick((builder) => builder.inputFE(2147483647))
     .slotName("cat0", (builder) =>
@@ -564,74 +564,6 @@ ServerEvents.recipes((event) => {
       builder.inputItems("16x mek1000:electricity_resistant_reinforced_casing")
     );
       
-
-  event.recipes.mek1000
-    .large_digital_assemble()
-    .id("mek1000:recipe_etheric_computer_array")
-    .duration(3000)
-    .outputItems('mek1000:etheric_computer_array')
-    .perTick((builder) => builder.inputFE(2147483647))
-    .slotName("cat0", (builder) =>
-      builder.chance(0, (builder) =>
-        builder.inputItems("mek1000:energy_cataryst")
-      )
-    )
-    .slotName("cat1", (builder) =>
-      builder.chance(0, (builder) =>
-        builder.inputItems("mek1000:item_cataryst")
-      )
-    )
-    .slotName("cat2", (builder) =>
-      builder.inputItems('8x mek1000:super_computing_cell')
-  )
-    .slotName("cat3", (builder) =>
-      builder.inputItems('mek1000:black_casing')
-    )
-    .slotName("s0", (builder) =>
-      builder.inputItems('advanced_ae:quantum_core')
-    )
-    .slotName("s1", (builder) =>
-      builder.inputItems('64x mek1000:echo_processor')
-    )
-    .slotName("s2", (builder) =>
-      builder.inputItems('64x mek1000:echo_processor')
-    )
-    .slotName("s3", (builder) =>
-      builder.inputItems('advanced_ae:quantum_core')
-    )
-    .slotName("s4", (builder) =>
-      builder.inputItems('64x mek1000:flux_processor')
-    )
-    .slotName("s5", (builder) =>
-      builder.inputItems('64x megacells:256m_crafting_storage')
-    )
-    .slotName("s6", (builder) =>
-      builder.inputItems('64x megacells:256m_crafting_storage')
-    )
-    .slotName("s7", (builder) =>
-      builder.inputItems('64x mek1000:valinium_processor')
-    )
-    .slotName("s8", (builder) => builder.inputItems('64x mek1000:flux_processor'))
-    .slotName("s9", (builder) =>
-      builder.inputItems('64x megacells:256m_crafting_storage')
-    )
-    .slotName("s10", (builder) =>
-      builder.inputItems('64x megacells:256m_crafting_storage')
-    )
-    .slotName("s11", (builder) => builder.inputItems('64x mek1000:valinium_processor'))
-    .slotName("s12", (builder) =>
-      builder.inputItems('advanced_ae:quantum_core')
-    )
-    .slotName("s13", (builder) =>
-      builder.inputItems('64x mek1000:cognitive_processor')
-    )
-    .slotName("s14", (builder) =>
-      builder.inputItems('64x mek1000:cognitive_processor')
-    )
-    .slotName("s15", (builder) =>
-      builder.inputItems('advanced_ae:quantum_core')
-    );
-
     event.recipes.mek1000
     .large_digital_assemble()
     .id('mek1000:integrated_ore_process_factory')

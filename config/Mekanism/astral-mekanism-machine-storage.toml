@@ -1,0 +1,18 @@
+
+#Machine Energy Storage Config. This config is synced from server to client.
+[storage]
+	#Base energy storage (Joules).
+	greenHouse = "20000"
+	#Base energy storage (Joules).
+	mekanicalCherger = "20000"
+	#Base energy storage (Joules).
+	mekanicalInscriber = "20000"
+	#Base energy storage (Joules).
+	transformer = "2000000"
+	#Base energy storage (Joules).
+	essentialCrafter = "20000"
+	#Base energy storage (Joules).
+	fluidInfuser = "80000"
+	#Base energy storage (Joules).
+	aaeReactionChamber = "8000000000"
+

@@ -16,19 +16,19 @@
 	#Base energy storage (Joules).
 	wirelessChargingStation = "100000000000"
 	#Base energy storage (Joules).
-	largeRotaryCondensentrator = "4096000000"
+	largeRotaryCondensentrator = "4096000"
 	#Base energy storage (Joules).
-	largeChemicalInfuser = "16384000000"
+	largeChemicalInfuser = "16384000"
 	#Base energy storage (Joules).
-	largeElectrolyticSeparator = "32768000000"
+	largeElectrolyticSeparator = "32768000"
 	#Base energy storage (Joules).
-	largeAntiprotonicNucleosynthesizer = "64000000000000"
+	largeAntiprotonicNucleosynthesizer = "64000000000"
 	#Base energy storage (Joules).
-	largePigmentMixer = "16384000000"
+	largePigmentMixer = "16384000"
 	#Base energy storage (Joules).
-	largeHeatGenerator = "256600000000"
+	largeHeatGenerator = "256600000"
 	#Base energy storage (Joules).
-	largeWindGenerator = "256600000000"
+	largeWindGenerator = "256600000"
 
 	#Settings for configuring Replicator Energy Storage
 	[storage.replicator]

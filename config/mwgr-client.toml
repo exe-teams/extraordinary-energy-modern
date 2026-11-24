@@ -1,0 +1,5 @@
+
+["Client Settings"]
+	#If true, generator block item names will display a wave animation on April 1st.
+	enableAprilFoolsEvent = true
+

@@ -1,0 +1,8 @@
+#Overrides the AE2 sort method when set to a non-default option
+#Allowed Values: DEFAULT, INTERNAL_ID, RESOURCE_LOCATION
+sortOverride = "INTERNAL_ID"
+
+[byResourceLocation]
+	#Sort Minecraft items first when sorting by resource location
+	minecraftFirst = true
+

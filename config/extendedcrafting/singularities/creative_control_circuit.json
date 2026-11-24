@@ -1,0 +1,10 @@
+{
+  "name": "singularity.mek1000.creative_control_circuit",
+  "colors": [
+    "636363",
+    "171717"
+  ],
+  "ingredient": {
+    "tag": "forge:circuits/creative"
+  }
+}

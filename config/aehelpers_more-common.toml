@@ -1,0 +1,3 @@
+#Whether the auto import of scheduled crafting results is enabled. Also configurable via crafting menu UI.
+enableAutoImport = true
+
