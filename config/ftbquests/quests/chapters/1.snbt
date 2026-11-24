@@ -52,24 +52,24 @@
 			y: -13.5d
 		}
 		{
-			id: "4B345B2EEB29EF0D"
-			linked_quest: "64310B544BDC74D0"
-			x: 0.0d
-			y: 11.0d
-		}
-		{
-			id: "3042DA1AD98E38B8"
-			linked_quest: "7ED68F17797155BB"
-			x: 1.5d
-			y: 11.0d
-		}
-		{
-			id: "48B83EE5943E6C4C"
-			linked_quest: "55BC5FEC8F4AE878"
+			id: "600AB676F65507F8"
+			linked_quest: "5AF53849FAD16922"
 			shape: "hexagon"
-			size: 3.0d
-			x: 1.5d
-			y: 15.0d
+			size: 2.0d
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			id: "6AEFD1660E3E9FD9"
+			linked_quest: "7494EB64A13706C6"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			id: "1D304B0DA1A0AEBF"
+			linked_quest: "0DCCE6060D187302"
+			x: 4.0d
+			y: 9.5d
 		}
 	]
 	quests: [
@@ -364,7 +364,7 @@
 			}]
 			title: "冶金吹込み機を作る"
 			x: 0.0d
-			y: -4.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
@@ -382,7 +382,7 @@
 				item: "ae2:mysterious_cube"
 				type: "item"
 			}]
-			title: "ケルタスクオーツと神秘的なキューブを作る"
+			title: "神秘的なキューブを作る"
 			x: -3.0d
 			y: -6.5d
 		}
@@ -478,7 +478,7 @@
 			}]
 			title: "基本制御回路を作る"
 			x: -3.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["68335D23BF84FEE3"]
@@ -534,7 +534,7 @@
 			]
 			title: "濃縮室と粉砕機を作る"
 			x: 0.0d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["0EE8A78C4EFA5BB8"]
@@ -553,7 +553,7 @@
 			}]
 			title: "発展制御回路を作る"
 			x: 0.0d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
@@ -564,8 +564,8 @@
 				type: "item"
 			}]
 			title: "加圧反応室を作る"
-			x: 2.0d
-			y: 1.0d
+			x: 4.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["18EF09B75E5B4CFC"]
@@ -584,7 +584,7 @@
 			}]
 			title: "精鋭制御回路を作る"
 			x: 0.0d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["24A7B7094ED357E9"]
@@ -596,8 +596,8 @@
 				type: "item"
 			}]
 			title: "浄化室を作る"
-			x: -2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["38F0D9673E24BE74"]
@@ -609,8 +609,8 @@
 				type: "item"
 			}]
 			title: "化学注入室を作る"
-			x: -2.0d
-			y: 5.0d
+			x: 0.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["61D9BE79FEB34259"]
@@ -627,73 +627,7 @@
 			}]
 			title: "究極制御回路を作る"
 			x: 0.0d
-			y: 6.5d
-		}
-		{
-			dependencies: ["7F5BC9CABAE2CB00"]
-			id: "64310B544BDC74D0"
-			rewards: [{
-				count: 4
-				id: "50264E3A78E1EF42"
-				item: "mekanism:ultimate_control_circuit"
-				type: "item"
-			}]
-			subtitle: "Modpack監督を燃やそう"
-			tasks: [
-				{
-					id: "1949A59CAE24BE87"
-					item: "mekanism:chemical_dissolution_chamber"
-					type: "item"
-				}
-				{
-					id: "34E8749D13B7183E"
-					item: "mekanism:isotopic_centrifuge"
-					type: "item"
-				}
-			]
-			title: "{ftbquests.chapter.1.quest21\\.title}"
-			x: -2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: [
-				"64310B544BDC74D0"
-				"342D8A0D183D1E23"
-			]
-			id: "7ED68F17797155BB"
-			rewards: [
-				{
-					count: 4
-					id: "65F6EAC000AA96E7"
-					item: "mekanism_empowered:upgrade_empowered_speed"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "01A0A7BC7610386A"
-					item: "mekanism_empowered:upgrade_empowered_energy"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "222546AA95EA5460"
-				item: "mekanismgenerators:gas_burning_generator"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 8.0d
-		}
-		{
-			dependencies: ["7ED68F17797155BB"]
-			id: "55BC5FEC8F4AE878"
-			subtitle: "つよい発電機その1"
-			tasks: [{
-				id: "6AC4BB9887D6DB05"
-				item: "mekmm:large_gas_burning_generator"
-				type: "item"
-			}]
-			x: 4.5d
-			y: 8.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["503CF531934055CD"]
@@ -827,7 +761,7 @@
 				type: "item"
 			}]
 			x: -5.0d
-			y: -1.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -913,7 +847,7 @@
 				}
 			]
 			x: -5.0d
-			y: -10.5d
+			y: -12.0d
 		}
 		{
 			dependencies: ["7F5BC9CABAE2CB00"]
@@ -942,8 +876,8 @@
 				item: "mek1000:pdt"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 11.0d
+			x: 2.0d
+			y: 7.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -1020,7 +954,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: -1.0d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -1040,7 +974,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 1.0d
+			y: 1.5d
 		}
 		{
 			dependencies: [
@@ -1060,7 +994,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["1250AB64CE893AC7"]
@@ -1077,7 +1011,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 9.0d
+			y: 9.5d
 		}
 		{
 			dependencies: ["016780D32B1ABC49"]
@@ -1117,7 +1051,7 @@
 			]
 			title: "偽造牛乳"
 			x: -5.0d
-			y: -9.0d
+			y: -10.5d
 		}
 	]
 	subtitle: ["{ftbquests.chapter.1.subtitle0}"]

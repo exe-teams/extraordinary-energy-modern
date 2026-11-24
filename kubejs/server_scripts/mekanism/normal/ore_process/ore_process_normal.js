@@ -166,12 +166,12 @@ ServerEvents.recipes(event => {
 
         if (MekanismKeyHelper.slurry(slurry.dirty).get() === null) {
 
-            slurry_dirty_check.forEach(item => {
+            for (const item of slurry_dirty_check) {
                 slurry.dirty = item
-                if (MekanismKeyHelper.slurry(slurry.dirty).get() != null) {
-                    return
+                if (!(MekanismKeyHelper.slurry(slurry.dirty).get() === null)) {
+                    break
                 }
-            })
+            }
 
             if (MekanismKeyHelper.slurry(slurry.dirty).get() === null) {
                 failcount++
@@ -188,12 +188,12 @@ ServerEvents.recipes(event => {
 
         if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
 
-            slurry_clean_check.forEach(item => {
+            for (const item of slurry_clean_check) {
                 slurry.clean = item
-                if (MekanismKeyHelper.slurry(slurry.clean).get() != null) {
-                    return
+                if (!(MekanismKeyHelper.slurry(slurry.clean).get() === null)) {
+                    break
                 }
-            })
+            }
 
             if (MekanismKeyHelper.slurry(slurry.clean).get() === null) {
                 failcount++
