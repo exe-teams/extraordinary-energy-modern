@@ -1,3 +1,5 @@
 /overrides/config/ae2/client.json
 /overrides/config/jei/world
-
+.serena/*
+.codex/*
+.agents/*
