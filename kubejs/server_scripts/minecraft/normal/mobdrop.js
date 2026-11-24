@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
 
     event.recipes.mekanism.enriching("64x minecraft:dragon_breath",'minecraft:dragon_egg')
 
-    event.shapeless('minecraft:milk_bucket',['minecraft:water_bucket','8x minecraft:white_dye']).consumeIngredient('minecraft:bucket')
+    event.shapeless('minecraft:milk_bucket',['minecraft:water_bucket','8x minecraft:white_dye']).consumeIngredient('minecraft:water_bucket')
 
     event.custom({
         type: 'experienceobelisk:molecular_metamorphosis',
